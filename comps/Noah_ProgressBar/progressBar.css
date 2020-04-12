@@ -1,0 +1,34 @@
+.progBarCont {
+  width: 370pt;
+  height: 40pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 85pt;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+    -2px -2px 4px rgba(116, 145, 177, 0.25);
+}
+
+.progBar {
+  position: absolute;
+  height: 10pt;
+  width: 320pt;
+  background: linear-gradient(to right, #00ffe2 0%, #0079ff 100%);
+  border-radius: 85pt;
+}
+
+.lines {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#line {
+  height: 65%;
+  width: 2pt;
+  background-color: #062d59;
+  margin: 40pt;
+  border-radius: 85pt;
+}
