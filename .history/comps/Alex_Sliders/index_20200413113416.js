@@ -13,7 +13,7 @@ const Slider = () => {
     var slider = document.querySelector("#myRange");
     var output = document.querySelector("#value");
 
-    output.innerHTML = slider.value;
+    output.innerHTML = this.value;
 
     slider.oninput = function () {
         output.innerHTML = this.value;
@@ -21,7 +21,7 @@ const Slider = () => {
 
     slider.addEventListener("mousemove", function () {
         var x = slide.value;
-        var color = "linear-gradient(90deg, rgb(0, 163, 255)' + x + '%, rgb(13, 230, 245, 0.103) + x + '%')"
+        var color = "linear-gradient(90deg, #7491B1 + x + '%', rgb(245, 13, 52) + x + '%')"
         slider.style.background = color;
     })
 }
