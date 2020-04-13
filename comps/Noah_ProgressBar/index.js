@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import "./progressBar.css";
 
-const progBar = () => (
-  <div>
-    <div class="progBarCont">
-      <div class="lines">
+const ProgBar = () =>
+ <div>
+    <div className="progBarCont">
+      <div className="lines">
         <div id="line"></div>
         <div id="line"></div>
         <div id="line"></div>
@@ -12,6 +12,6 @@ const progBar = () => (
       <div class="progBar"></div>
     </div>
   </div>
-);
 
-export default progBar;
+
+export default ProgBar;
