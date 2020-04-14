@@ -10,7 +10,7 @@ const DishPage = () => { }
 <div>
     <CustomHeader />
     <BodyText />
-    <ImgFrame />
+    <imgFrame />
     <CustomButton />
     <ProgBar />
 </div>

@@ -8,11 +8,19 @@ import ProgBar from '../../comps/Noah_ProgressBar';
 
 const ResultPage = () => {
     <div>
-        <CustomHeader />
-        <BodyText />
-        <BodyText />
-        <ImgFrame />
-        <ProgBar />
+        <div className="header">
+            <CustomHeader />
+        </div>
+        <div className="writtenResults">
+            <BodyText />
+        </div>
+        <div className="resultsAnswer">
+            <BodyText />
+            <imgFrame />
+        </div>
+        <div className="progressBar">
+            <ProgBar />
+        </div>
     </div>
 }
 
