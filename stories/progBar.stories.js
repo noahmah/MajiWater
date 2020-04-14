@@ -1,9 +1,12 @@
-import React from "react";
-import progBar from "../comps/Noah_ProgressBar";
+import React from 'react';
+import ProgBar from "../comps/Noah_ProgressBar";
 
 export default {
   title: "progressBar",
-  component: progBar,
+  component: ProgBar,
 };
 
-export const customprogBar = () => <customProgBar />;
+
+export const customprogBar = () => <ProgBar/>
+
+
