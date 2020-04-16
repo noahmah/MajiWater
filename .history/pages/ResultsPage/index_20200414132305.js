@@ -11,13 +11,9 @@ const ResultPage = () => {
         <CustomHeader />
         <BodyText />
         <BodyText />
-        <ImgFrame />
+        <imgFrame />
         <ProgBar />
     </div>
 }
-
-
-const ResultPage = () => { }
-
 
 export default ResultPage;
