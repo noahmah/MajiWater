@@ -1,12 +1,11 @@
 import React from "react";
-import './imgFrame.css';
-import '../../comps/Alex_Images/images/dishes.jpg'
+import './ImgFrame.css';
 
 
-var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
+const defaultImg = require("../Alex_Images/shower.jpg");
 
 const ImgFrame = ({ img }) => <div>
-    <div className="frame">
+    <div className="Frame">
         <img className="image" src={img} />
     </div>
 </div>

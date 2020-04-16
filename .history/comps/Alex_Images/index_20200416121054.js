@@ -3,7 +3,7 @@ import './imgFrame.css';
 import '../../comps/Alex_Images/images/dishes.jpg'
 
 
-var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
+var defaultImg = require('../../comps/Alex_Images/images/dishes.jpg');
 
 const ImgFrame = ({ img }) => <div>
     <div className="frame">

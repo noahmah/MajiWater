@@ -7,5 +7,5 @@ export default {
     component: Slider,
 };
 
-export const customImage = () => <ImgFrame />;
+export const customSlider = () => <ImgFrame />;
 export const customSlider = () => <Slider />;
