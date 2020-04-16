@@ -16,4 +16,8 @@ const ResultPage = () => {
     </div>
 }
 
+
+const ResultPage = () => { }
+
+
 export default ResultPage;
