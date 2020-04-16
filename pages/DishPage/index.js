@@ -14,4 +14,9 @@ const DishPage = () => { }
     <CustomButton />
     <ProgBar />
 </div>
+
+
+const DishPage = () => { }
+
+
 export default DishPage;

@@ -13,8 +13,11 @@ const CleansePage = () => {
         <ImgFrame />
         <CustomButton />
         <ProgBar />
-
     </div>
 }
+
+
+const CleansePage = () => { }
+
 
 export default CleansePage;
