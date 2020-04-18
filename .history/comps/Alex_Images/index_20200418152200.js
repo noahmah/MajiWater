@@ -12,7 +12,7 @@ const ImgFrame = ({ img }) => <div>
 </div>
 
 ImgFrame.defaultProps = {
-    img: defaultImg,
+    img: "../../comps/Alex_Images/images/dishes.jpg",
 }
 
 export default ImgFrame;

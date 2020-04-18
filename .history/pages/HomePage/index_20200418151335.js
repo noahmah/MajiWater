@@ -9,8 +9,8 @@ import ProgBar from '../../comps/Noah_ProgressBar';
 const HomePage = () =>
     <div>
         <CustomHeader />
-        <CustomButton text='Start' />
-        <CustomButton text='About' />
+        <CustomButton />
+        <CustomButton />
         <ProgBar />
     </div>
 

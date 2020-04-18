@@ -11,10 +11,10 @@ var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
 const CleansePage = () => {
     return <div>
         <CustomHeader />
-        <BodyText text='Did you shower or take a bath today' />
+        <BodyText />
         <ImgFrame />
-        <CustomButton text='Bath' />
-        <CustomButton text='Shower' />
+        <CustomButton />
+        <CustomButton />
         <ProgBar />
     </div>
 }
