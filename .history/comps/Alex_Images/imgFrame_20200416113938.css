@@ -1,0 +1,16 @@
+.image{
+    width: 205px;
+    max-width: 205px;
+    max-height: 205px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.frame{
+    width: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100%;
+    border: 5px solid black;
+    object-fit: cover;
+}
