@@ -6,21 +6,18 @@ import ImgFrame from '../../comps/Alex_Images';
 import CustomButton from '../../comps/Joe_Buttons';
 import ProgBar from '../../comps/Noah_ProgressBar';
 
-var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
-
 const CleansePage = () => {
     return <div>
         <CustomHeader />
-        <BodyText text='Did you shower or take a bath today' />
+        <BodyText />
         <ImgFrame />
-        <CustomButton text='Bath' />
-        <CustomButton text='Shower' />
+        <CustomButton />
         <ProgBar />
     </div>
 }
 
 
-
+const CleansePage = () => { }
 
 
 export default CleansePage;

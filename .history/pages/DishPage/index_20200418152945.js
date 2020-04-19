@@ -12,10 +12,9 @@ const DishPage = ({ }) => {
 
     return <div>
         <CustomHeader />
-        <BodyText text='Did you use the dishwasher today?' />
+        <BodyText />
         <ImgFrame img={'https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3334&q=80'} />
-        < CustomButton text='Yes' />
-        <CustomButton text='No' />
+        < CustomButton />
         <ProgBar />
     </div>
 }

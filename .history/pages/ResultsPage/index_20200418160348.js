@@ -1,26 +1,23 @@
 import React from 'react';
-import './cleanse_page.css';
+import './result_page.css';
 import CustomHeader from '../../comps/Joe_Header';
 import BodyText from '../../comps/Noah_BodyText';
 import ImgFrame from '../../comps/Alex_Images';
 import CustomButton from '../../comps/Joe_Buttons';
 import ProgBar from '../../comps/Noah_ProgressBar';
 
-var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
-
-const CleansePage = () => {
-    return <div>
+const ResultPage = () =>
+    <div>
         <CustomHeader />
-        <BodyText text='Did you shower or take a bath today' />
-        <ImgFrame />
-        <CustomButton text='Bath' />
-        <CustomButton text='Shower' />
+        <BodyText text='lorem' />
+        <BodyText text='lorem' />
+        <ImgFrame img={'https://images.unsplash.com/photo-1497655392221-e645087843da?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80'} />
         <ProgBar />
+
     </div>
-}
 
 
 
 
 
-export default CleansePage;
+export default ResultPage;
