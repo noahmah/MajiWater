@@ -1,92 +1,47 @@
-
-
 .progBarCont {
   width: 370pt;
-  height: 40pt;
+  height: 80pt;
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
-  border-radius: 85pt;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
-    -2px -2px 4px rgba(116, 145, 177, 0.25);
+  border-radius: 550pt;
+  box-shadow: 2pt 2pt 4pt rgba(0, 0, 0, 0.25),
+    -2pt -2pt 4pt rgba(116, 145, 177, 0.25);
 }
-
 
 .slider {
   -webkit-appearance: none;
   position: absolute;
-  width: 330px;
-  height: 15px;
-  border: #204377 solid 1px;
-  border-radius: 10px;  
-  background: linear-gradient(90deg, rgb(185, 204, 240, 0.103) 0%, rgba(185, 204, 240, 0.103) 50%);
+  width: 300pt;
+  height: 25pt;
+  border-radius: 50pt;
+  background: #7491b1;
   outline: none;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  box-shadow: inset 0 0.2px 5px rgba(6, 5, 65, 0.6);
 }
 
 .lines {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 100%;
-  width: 100%;
 }
 
 #line {
-  height: 65%;
+  height: 50%;
   width: 2pt;
-  background-color: #062d59;
-  margin: 15%;
-  border-radius: 85pt;
-}
-
-p{
-  margin-top: 50px;
-}
-
-.slider:hover {
-  opacity: 1;
-  -webkit-transition: .2s;
-  cursor: pointer;
+  background-color: #204377;
+  margin: 16%;
+  border-radius: 50pt;
 }
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-  background: #0066ff;
-  background-image: url(./arrows.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 20px;
-  background-position: center;
-  cursor: grab;
-}
-
-.slider::-webkit-slider-thumb:active {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%; 
-  background: #1c77ff;
-  background-image: url(./arrows.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: grabbing;
-  box-shadow: 1px 03px 5px rgba(6, 5, 65, 0.6);
-  -webkit-transition: .2s;
-  
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 50pt;
+  height: 50pt;
   border-radius: 50%;
-  background: #1158c4;
-  cursor: pointer;}
+  background: #204377;
+  cursor: pointer;
+  box-shadow: 2pt 2pt 4pt rgba(0, 0, 0, 0.25),
+    -2pt -2pt 4pt rgba(116, 145, 177, 0.25);
+}
