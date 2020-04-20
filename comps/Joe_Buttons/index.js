@@ -1,18 +1,19 @@
-import React from 'react';
-import './button.css';
+import React from "react";
+import "./button.css";
 
-const CustomButton = ({text, onclick,color}) =>  <div className = "customButtonBox" onClick={onclick}>
-    <div className = "customButton">
-     {text}
-    </div>
-</div>
+const CustomButton = ({ text, onclick, color }) => (
+  <div
+    className="customButtonBox"
+    onClick={onclick}
+    style={{ backgroundColor: color }}
+  >
+    <div className="customButton">{text}</div>
+  </div>
+);
 
 CustomButton.defaultProps = {
-    text: "Click here",
-    color: "#F7FAFD",
-
-}
-
-
+  text: "Click here",
+  color: "#F7FAFD",
+};
 
 export default CustomButton;
