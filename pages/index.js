@@ -7,16 +7,16 @@ import "../pages/HomePage/home_page.css";
 import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
 
-function nextPage() {
-  Router.push("/CleansePage");
-}
 
-// function aboutPage() {
-//   Router.push("/AboutPage");
-// }
 
-const Index = () => (
-  <div id="home-page">
+const Index = () => {
+  
+    function nextPage(){
+        Router.push("/CleansePage");
+    }
+
+  
+  return <div id="home-page">
     <div id="header">
       <CustomHeader />
     </div>
@@ -44,6 +44,6 @@ const Index = () => (
       </div>
     </div>
   </div>
-);
+};
 
 export default Index;

@@ -16,3 +16,4 @@ ImgFrame.defaultProps = {
 }
 
 export default ImgFrame;
+
