@@ -5,9 +5,17 @@ import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
+import Link from 'next/link';
+import Router from 'next/Router';
 
-const DishPage = ({}) => {
-  return (
+
+const DishPage = () => { 
+
+    function nextPage(){
+        Router.push("/ResultsPage");
+    }
+  
+     return (
     <div>
       <div id="header">
         <CustomHeader />
@@ -26,9 +34,9 @@ const DishPage = ({}) => {
         <div id="btns-cont">
           <div id="btns-box">
             <div id="btn-margin">
-              <CustomButton color="#F7FAFD" text="Yes" />
+              <CustomButton color="#F7FAFD" text="Yes" onclick={nextPage} />
             </div>
-            <CustomButton color="#F7FAFD" text="No" />
+            <CustomButton color="#F7FAFD" text="No" onclick={nextPage} />
           </div>
         </div>
       </div>
@@ -39,7 +47,10 @@ const DishPage = ({}) => {
         </div>
       </div>
     </div>
-  );
-};
+
+
+}
+
+
 
 export default DishPage;
