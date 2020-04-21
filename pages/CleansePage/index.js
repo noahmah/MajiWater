@@ -1,26 +1,44 @@
-import React from 'react';
-import './cleanse_page.css';
-import CustomHeader from '../../comps/Joe_Header';
-import BodyText from '../../comps/Noah_BodyText';
-import ImgFrame from '../../comps/Alex_Images';
-import CustomButton from '../../comps/Joe_Buttons';
-import ProgBar from '../../comps/Noah_ProgressBar';
+import React from "react";
+import "./cleanse_page.css";
+import CustomHeader from "../../comps/Joe_Header";
+import BodyText from "../../comps/Noah_BodyText";
+import ImgFrame from "../../comps/Alex_Images";
+import CustomButton from "../../comps/Joe_Buttons";
+import ProgBar from "../../comps/Noah_ProgressBar";
 
-var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
+var defaultImg = require("../../comps/Alex_Images/images/shower.jpg");
 
 const CleansePage = () => {
-    return <div>
+  return (
+    <div>
+      <div id="header">
         <CustomHeader />
-        <BodyText text='Did you shower or take a bath today' />
+      </div>
+      <div id="hero-image">
+        <BodyText text="Did you shower or take a bath today" />
+      </div>
+      <div id="hero-image">
         <ImgFrame />
-        <CustomButton text='Bath' />
-        <CustomButton text='Shower' />
-        <ProgBar />
+      </div>
+      <div id="btns">
+        <div id="btns-cont">
+          <div id="btns-box">
+            <div id="btn-margin">
+              <CustomButton color="#F7FAFD" text="Bath" />
+            </div>
+            <CustomButton color="#F7FAFD" text="Shower" />
+          </div>
+        </div>
+      </div>
+      <div id="prog-box">
+        <div id="prog-cont">
+          <div id="prog-bar">
+            <ProgBar />
+          </div>
+        </div>
+      </div>
     </div>
-}
-
-
-
-
+  );
+};
 
 export default CleansePage;
