@@ -15,8 +15,8 @@ const DishPage = () => {
         Router.push("/ResultsPage");
     }
   
-     return (
-    <div>
+     
+    return <div>
       <div id="header">
         <CustomHeader />
       </div>
@@ -40,12 +40,13 @@ const DishPage = () => {
           </div>
         </div>
       </div>
-      div id="prog-box">
+      <div id="prog-box">
       <div id="prog-cont">
         <div id="prog-bar">
           <ProgBar />
         </div>
       </div>
+    </div>
     </div>
 
 

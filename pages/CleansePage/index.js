@@ -5,14 +5,7 @@ import CustomHeader from "../../comps/Joe_Header";
 import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
-import ProgBar from "../../comps/Noah_ProgressBar";
-import React from 'react';
-import './cleanse_page.css';
-import Link from 'next/link';
 import Router from 'next/Router';
-import CustomHeader from '../../comps/Joe_Header';
-import BodyText from '../../comps/Noah_BodyText';
-import CustomButton from '../../comps/Joe_Buttons';
 import ProgBar from '../../comps/Noah_ProgressBar';
 
 
@@ -25,7 +18,7 @@ const CleansePage = () => {
     }
 
     return <div>
-
+        <div id="header">
         <CustomHeader />
       </div>
       <div id="hero-image">
@@ -38,9 +31,9 @@ const CleansePage = () => {
         <div id="btns-cont">
           <div id="btns-box">
             <div id="btn-margin">
-              <CustomButton color="#F7FAFD" text="Bath" />
+              <CustomButton color="#F7FAFD" text="Bath"onclick={nextPage} />
             </div>
-            <CustomButton color="#F7FAFD" text="Shower" />
+            <CustomButton color="#F7FAFD" text="Shower" onclick={nextPage} /> 
           </div>
         </div>
       </div>
@@ -51,14 +44,9 @@ const CleansePage = () => {
           </div>
         </div>
       </div>
+      </div>
 
-        <CustomButton text='Bath' />
-        <CustomButton text='Shower' onclick={nextPage} />
-        <ProgBar />
-
-    </div>
-  );
-
+};
 
 
 export default CleansePage;
