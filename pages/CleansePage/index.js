@@ -8,6 +8,8 @@ import BodyText from '../../comps/Noah_BodyText';
 import CustomButton from '../../comps/Joe_Buttons';
 import ProgBar from '../../comps/Noah_ProgressBar';
 
+var defaultImg = require('../../comps/Alex_Images/images/shower.jpg');
+
 const CleansePage = () => {
 
     function nextPage(){
@@ -15,10 +17,11 @@ const CleansePage = () => {
     }
 
     return <div>
-        <CustomHeader text="Shower" />
-        <BodyText />
-        {/* <ImgFrame /> */}
-        <CustomButton text="Next" onclick={nextPage}/>
+        <CustomHeader />
+        <BodyText text='Did you shower or take a bath today' />
+        <ImgFrame />
+        <CustomButton text='Bath' />
+        <CustomButton text='Shower' onclick={nextPage} />
         <ProgBar />
     </div>
 }
