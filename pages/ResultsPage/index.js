@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './result_page.css';
 import Link from 'next/link';
@@ -28,3 +29,4 @@ const ResultPage = () => {
 }
 
 export default ResultPage;
+
