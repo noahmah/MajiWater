@@ -2,7 +2,7 @@
 import React from 'react';
 import './result_page.css';
 import Link from 'next/link';
-import Router from 'next/Router';
+import Router from 'next/router';
 import CustomHeader from '../../comps/Joe_Header';
 import BodyText from '../../comps/Noah_BodyText';
 import ImgFrame from '../../comps/Alex_Images';

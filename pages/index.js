@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Router from "next/Router";
+import Router from "next/router";
 import "./app.css";
 import CustomHeader from "../comps/Joe_Header";
 import CustomButton from "../comps/Joe_Buttons";

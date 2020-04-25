@@ -6,7 +6,7 @@ import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Link from 'next/link';
-import Router from 'next/Router';
+import Router from 'next/router';
 
 
 const DishPage = () => { 
