@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./cleanse_page.css";
+import "./tubVolume_page.css";
 import CustomHeader from "../../comps/Joe_Header";
 import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
@@ -10,7 +10,7 @@ import ProgBar from '../../comps/Noah_ProgressBar';
 
 
 
-const CleansePage = () => {
+const TubVolumePage = () => {
 
 
     function nextPage() {
@@ -49,4 +49,4 @@ const CleansePage = () => {
 };
 
 
-export default CleansePage;
+export default TubVolumePage;

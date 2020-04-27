@@ -1,16 +1,16 @@
 
 import React from "react";
-import "./cleanse_page.css";
+import "./showerLength_page.css";
 import CustomHeader from "../../comps/Joe_Header";
 import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from 'next/router';
 import ProgBar from '../../comps/Noah_ProgressBar';
+import Slider from '../../comps/Alex_Sliders';
 
 
-
-const CleansePage = () => {
+const ShowerLengthPage = () => {
 
 
     function nextPage() {
@@ -22,25 +22,22 @@ const CleansePage = () => {
             <CustomHeader />
         </div>
         <div id="hero-image">
-            <BodyText text="Did you shower or take a bath today" />
+            <BodyText text="How long was your shower?" />
         </div>
         <div id="hero-image">
-            <ImgFrame />
+            <ImgFrame img={'https://images.unsplash.com/photo-1559819413-fbb8be49770b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80'} />
         </div>
         <div id="btns">
             <div id="btns-cont">
                 <div id="btns-box">
-                    <div id="btn-margin">
-                        <CustomButton color="#F7FAFD" text="Bath" onclick={nextPage} />
-                    </div>
-                    <CustomButton color="#F7FAFD" text="Shower" onclick={nextPage} />
+                    <Slider />
                 </div>
             </div>
-        </div>
-        <div id="prog-box">
-            <div id="prog-cont">
-                <div id="prog-bar">
-                    <ProgBar />
+            <div id="prog-box">
+                <div id="prog-cont">
+                    <div id="prog-bar">
+                        <ProgBar />
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,4 +46,4 @@ const CleansePage = () => {
 };
 
 
-export default CleansePage;
+export default ShowerLengthPage;

@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./cleanse_page.css";
+import "./about_page.css";
 import CustomHeader from "../../comps/Joe_Header";
 import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
@@ -10,7 +10,7 @@ import ProgBar from '../../comps/Noah_ProgressBar';
 
 
 
-const CleansePage = () => {
+const AboutPage = () => {
 
 
     function nextPage() {
@@ -22,18 +22,15 @@ const CleansePage = () => {
             <CustomHeader />
         </div>
         <div id="hero-image">
-            <BodyText text="Did you shower or take a bath today" />
+            <ImgFrame />
         </div>
         <div id="hero-image">
-            <ImgFrame />
+            <BodyText text="Did you shower or take a bath today" />
         </div>
         <div id="btns">
             <div id="btns-cont">
                 <div id="btns-box">
-                    <div id="btn-margin">
-                        <CustomButton color="#F7FAFD" text="Bath" onclick={nextPage} />
-                    </div>
-                    <CustomButton color="#F7FAFD" text="Shower" onclick={nextPage} />
+                    <CustomButton color="#F7FAFD" text="Next" onclick={nextPage} />
                 </div>
             </div>
         </div>
@@ -49,4 +46,4 @@ const CleansePage = () => {
 };
 
 
-export default CleansePage;
+export default AboutPage;
