@@ -1,5 +1,4 @@
 body {
-
   margin: 0;
 }
 
@@ -40,18 +39,9 @@ body {
   bottom: 5%;
 }
 
-#header {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
 #hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15%;
 }
-
-  
- 

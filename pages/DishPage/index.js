@@ -11,14 +11,13 @@ import {data, ChangeData} from "../data";
 console.log(data);
 
 
-const DishPage = () => { 
+const DishPage = () => {
+  function nextPage() {
+    Router.push("/ResultsPage");
+  }
 
-    function nextPage(){
-        Router.push("/ResultsPage");
-    }
-  
-     
-    return <div>
+  return (
+    <div>
       <div id="header">
         <CustomHeader />
       </div>
@@ -49,17 +48,14 @@ const DishPage = () => {
         </div>
       </div>
       <div id="prog-box">
-      <div id="prog-cont">
-        <div id="prog-bar">
-          <ProgBar />
+        <div id="prog-cont">
+          <div id="prog-bar">
+            <ProgBar />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-
-
-}
-
-
+  );
+};
 
 export default DishPage;

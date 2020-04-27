@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 import "./app.css";
@@ -17,35 +18,48 @@ const Index = () => {
         Router.push("/CleansePage");
     }
 
-  
-  return <div id="home-page">
-    <div id="header">
-      <CustomHeader />
-    </div>
-    <div id="hero-image">
-      {/* Tried using src to grab the logo but it didn't work */}
-      <ImgFrame />
-    </div>
-    <div id="btns">
-      <div id="btns-cont">
-        <div id="btns-box">
-          <div id="btn-margin">
-            {/* The color= isn't working */}
-            <CustomButton color="#F7FAFD" text="Start" onclick={nextPage} />
+import CustomMenu from "../comps/Noah_Menu";
+
+
+const Index = () => {
+  function nextPage() {
+    Router.push("/CleansePage");
+  }
+
+  return (
+    <div id="home-page">
+      <div id="header">
+
+        <CustomMenu />
+
+        <CustomHeader />
+
+      </div>
+      <div id="hero-image">
+        {/* Tried using src to grab the logo but it didn't work */}
+        <ImgFrame />
+      </div>
+      <div id="btns">
+        <div id="btns-cont">
+          <div id="btns-box">
+            <div id="btn-margin">
+              {/* The color= isn't working */}
+              <CustomButton color="#F7FAFD" text="Start" onclick={nextPage} />
+            </div>
+            {/* Need to change on click from next page to AboutPage when about page is made */}
+            <CustomButton color="#F7FAFD" text="About" onclick={nextPage} />
           </div>
-          {/* Need to change on click from next page to AboutPage when about page is made */}
-          <CustomButton color="#F7FAFD" text="About" onclick={nextPage} />
+        </div>
+      </div>
+      <div id="prog-box">
+        <div id="prog-cont">
+          <div id="prog-bar">
+            <ProgBar />
+          </div>
         </div>
       </div>
     </div>
-    <div id="prog-box">
-      <div id="prog-cont">
-        <div id="prog-bar">
-          <ProgBar />
-        </div>
-      </div>
-    </div>
-  </div>
+  );
 };
 
 export default Index;
