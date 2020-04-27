@@ -7,6 +7,8 @@ import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Link from 'next/link';
 import Router from 'next/router';
+import {data, ChangeData} from "../data";
+console.log(data);
 
 
 const DishPage = () => { 
@@ -34,9 +36,15 @@ const DishPage = () => {
         <div id="btns-cont">
           <div id="btns-box">
             <div id="btn-margin">
-              <CustomButton color="#F7FAFD" text="Yes" onclick={nextPage} />
+              <CustomButton color="#F7FAFD" text="Yes" onclick={()=>{
+                nextPage();
+                ChangeData("Yes" ,5);
+              }} />
             </div>
-            <CustomButton color="#F7FAFD" text="No" onclick={nextPage} />
+            <CustomButton color="#F7FAFD" text="No" onclick={()=>{
+              nextPage();
+              ChangeData("No" ,5);
+            }} />
           </div>
         </div>
       </div>

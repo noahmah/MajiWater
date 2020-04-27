@@ -7,12 +7,13 @@ import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from 'next/router';
 import ProgBar from '../../comps/Noah_ProgressBar';
-
+import {data, ChangeData} from "../data";
+console.log(data);
 
 
 const CleansePage = () => {
 
-
+    
     function nextPage(){
         Router.push("/LaundryPage");
     }
@@ -31,9 +32,15 @@ const CleansePage = () => {
         <div id="btns-cont">
           <div id="btns-box">
             <div id="btn-margin">
-              <CustomButton color="#F7FAFD" text="Bath"onclick={nextPage} />
+              <CustomButton color="#F7FAFD" text="Bath"onclick={()=>{
+                nextPage();
+                ChangeData("Bath" ,0);
+              }} />
             </div>
-            <CustomButton color="#F7FAFD" text="Shower" onclick={nextPage} /> 
+            <CustomButton color="#F7FAFD" text="Shower" onclick={()=>{
+              nextPage();
+              ChangeData("Shower" ,0);
+            }} /> 
           </div>
         </div>
       </div>

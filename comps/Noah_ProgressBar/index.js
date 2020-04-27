@@ -9,7 +9,7 @@ const ProgBar = () =>
         <div id="line"></div>
         <div id="line"></div>
       </div>
-      <div class="progBar"></div>
+      <div className="progBar"></div>
     </div>
   </div>
 

@@ -6,11 +6,13 @@ import CustomButton from "../comps/Joe_Buttons";
 import "../pages/HomePage/home_page.css";
 import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
-
+import {data, ChangeData} from "./data";
+console.log(data);
 
 
 const Index = () => {
-  
+    console.log(data);
+    
     function nextPage(){
         Router.push("/CleansePage");
     }
