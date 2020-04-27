@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 import "./app.css";
@@ -8,6 +9,7 @@ import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
 import CustomMenu from "../comps/Noah_Menu";
 
+
 const Index = () => {
   function nextPage() {
     Router.push("/CleansePage");
@@ -16,7 +18,11 @@ const Index = () => {
   return (
     <div id="home-page">
       <div id="header">
+
         <CustomMenu />
+
+        <CustomHeader />
+
       </div>
       <div id="hero-image">
         {/* Tried using src to grab the logo but it didn't work */}
