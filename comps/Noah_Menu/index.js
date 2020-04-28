@@ -8,7 +8,7 @@ import { MdMenu } from "react-icons/md";
 import CustomHeader from "../Joe_Header";
 
 const CustomMenu = ({ onclick }) => (
-  <div>
+  <div id="box">
     <div className="curved">
       <div className="menu">
         <div className="menu-btn back" onClick={onclick}>
