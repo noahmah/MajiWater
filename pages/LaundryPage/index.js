@@ -13,19 +13,26 @@ console.log(data);
 const LaundryPage = () => {
 
     function nextPage(){
-        Router.push("/DishPage");
+        if(data.results[3].answer === "Yes"){
+            data.page = "Laundry Load";
+            Router.push("/LaundryLoadsPage");
+        }
+        else{
+            data.page = "Dish Wash";
+            Router.push("/DishPage");   
+        }
     }
     return <div>
         <CustomHeader />
         <BodyText text='Did you do the laundry today?' />
         <ImgFrame img={'https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80'} />
         <CustomButton text='Yes'onclick={()=>{
-            nextPage();
             ChangeData("Yes" ,3);
+            nextPage();
         }}/>
         <CustomButton text='No' onclick={()=>{
-            nextPage();
             ChangeData("No" ,3);
+            nextPage()
         }}/>
         <ProgBar />
     </div>

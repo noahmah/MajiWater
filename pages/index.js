@@ -8,6 +8,7 @@ import "../pages/HomePage/home_page.css";
 import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
 import {data, ChangeData} from "./data";
+import CustomMenu from "../comps/Noah_Menu";
 console.log(data);
 
 
@@ -16,18 +17,10 @@ const Index = () => {
     
     function nextPage(){
         Router.push("/CleansePage");
+        data.page = "Cleanse";
     }
 
-import CustomMenu from "../comps/Noah_Menu";
-
-
-const Index = () => {
-  function nextPage() {
-    Router.push("/CleansePage");
-  }
-
-  return (
-    <div id="home-page">
+    return<div id="home-page">
       <div id="header">
 
         <CustomMenu />
@@ -35,6 +28,7 @@ const Index = () => {
         <CustomHeader />
 
       </div>
+
       <div id="hero-image">
         {/* Tried using src to grab the logo but it didn't work */}
         <ImgFrame />
@@ -59,7 +53,8 @@ const Index = () => {
         </div>
       </div>
     </div>
-  );
-};
+  
+}
+
 
 export default Index;

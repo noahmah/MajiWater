@@ -7,6 +7,8 @@ import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from 'next/router';
 import ProgBar from '../../comps/Noah_ProgressBar';
+import {data, ChangeData} from "../data";
+console.log(data);
 
 
 
@@ -14,6 +16,7 @@ const TubVolumePage = () => {
 
 
     function nextPage() {
+        data.page = "Laundry";
         Router.push("/LaundryPage");
     }
 
@@ -31,9 +34,15 @@ const TubVolumePage = () => {
             <div id="btns-cont">
                 <div id="btns-box">
                     <div id="btn-margin">
-                        <CustomButton color="#F7FAFD" text="Half" onclick={nextPage} />
+                        <CustomButton color="#F7FAFD" text="Half" onclick={()=>{
+                            nextPage();
+                            ChangeData("Half" ,2);
+                        }} />
                     </div>
-                    <CustomButton color="#F7FAFD" text="Full" onclick={nextPage} />
+                    <CustomButton color="#F7FAFD" text="Full" onclick={()=>{
+                        nextPage();
+                        ChangeData("Full" ,2);
+                    }} />
                 </div>
             </div>
         </div>

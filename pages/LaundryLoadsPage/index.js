@@ -15,7 +15,8 @@ const LaundryLoadsPage = () => {
 
 
     function nextPage() {
-        Router.push("/LaundryPage");
+        data.page = "Dish Wash";
+        Router.push("/DishPage");
     }
 
     return <div>

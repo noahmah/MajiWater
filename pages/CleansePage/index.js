@@ -15,12 +15,17 @@ const CleansePage = () => {
 
 
     function nextPage(){
-
-        Router.push("/LaundryPage");
+        if(data.results[0].answer === "Shower"){
+          data.page = "Shower Length";
+          Router.push("/ShowerLengthPage");
+        }else if(data.results[0].answer === "Bath"){
+          data.page = "Tub Volume";
+          Router.push("/TubVolumePage");
+        }
     }
 
     return <div>
-        <div id="header">
+        {/* <div id="header">
             <CustomHeader />
         </div>
         <div id="hero-image">
@@ -39,7 +44,8 @@ const CleansePage = () => {
                 </div>
             </div>
         <CustomHeader />
-      </div>
+      </div> */}
+      
       <div id="hero-image">
         <BodyText text="Did you shower or take a bath today" />
       </div>
@@ -51,13 +57,14 @@ const CleansePage = () => {
           <div id="btns-box">
             <div id="btn-margin">
               <CustomButton color="#F7FAFD" text="Bath"onclick={()=>{
-                nextPage();
-                ChangeData("Bath" ,0);
+               ChangeData("Bath" ,0);
+               nextPage();
+                
               }} />
             </div>
             <CustomButton color="#F7FAFD" text="Shower" onclick={()=>{
-              nextPage();
-              ChangeData("Shower" ,0);
+                ChangeData("Shower" ,0);
+                nextPage();
             }} /> 
           </div>
         </div>
@@ -69,7 +76,7 @@ const CleansePage = () => {
             </div>
         </div>
     </div>
-
+</div>
 };
 
 

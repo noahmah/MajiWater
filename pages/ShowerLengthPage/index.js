@@ -8,6 +8,8 @@ import CustomButton from "../../comps/Joe_Buttons";
 import Router from 'next/router';
 import ProgBar from '../../comps/Noah_ProgressBar';
 import Slider from '../../comps/Alex_Sliders';
+import {data, ChangeData} from "../data";
+console.log(data);
 
 
 const ShowerLengthPage = () => {
@@ -31,6 +33,7 @@ const ShowerLengthPage = () => {
             <div id="btns-cont">
                 <div id="btns-box">
                     <Slider />
+                    
                 </div>
             </div>
             <div id="prog-box">
