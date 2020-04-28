@@ -24,9 +24,11 @@ export var data = {
             question: "Did you use the dishwasher today?",
             answer: ""
         }
-    ]
+    ],
+    page: ""
 
 }
+
 
 
 

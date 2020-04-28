@@ -13,6 +13,7 @@ console.log(data);
 
 const DishPage = () => {
   function nextPage() {
+    data.page = "Results";
     Router.push("/ResultsPage");
   }
 
