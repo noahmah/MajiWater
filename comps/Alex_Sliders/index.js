@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "../Alex_Sliders/slider.css";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from "next/router";
-import { data, ChangeData } from "../../pages/data";
+import { data, ChangeData, checkPath } from "../../pages/data";
 console.log(data);
+
+
 
 const Slider = () => {
   function nextPage() {
@@ -43,8 +45,18 @@ const Slider = () => {
         text="Next"
         onclick={() => {
           if (data.page === "Shower Length") {
-            ChangeData(String(val), 1);
-            nextPage();
+            switch (val){
+              case "1":
+                ChangeData("10 Minutes", 1);
+                nextPage();
+              case "2":
+                ChangeData("15 Minutes", 1);
+                nextPage();
+              case "3":
+                ChangeData("20 Minutes", 1);
+                nextPage();
+            }
+    
           } else if (data.page === "Laundry Load") {
             ChangeData(String(val), 4);
             nextPage();
