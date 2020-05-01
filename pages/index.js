@@ -7,26 +7,22 @@ import CustomButton from "../comps/Joe_Buttons";
 import "../pages/HomePage/home_page.css";
 import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
-import {data, ChangeData} from "./data";
+import { data, ChangeData } from "./data";
 import CustomMenu from "../comps/Noah_Menu";
 console.log(data);
 
-
 const Index = () => {
-    console.log(data);
-    
-    function nextPage(){
-        Router.push("/CleansePage");
-        data.page = "Cleanse";
-    }
+  console.log(data);
 
-    return<div id="home-page">
-      <div id="header">
+  function nextPage() {
+    Router.push("/CleansePage");
+    data.page = "Cleanse";
+  }
 
+  return (
+    <div id="home-page">
+      <div>
         <CustomMenu />
-
-        <CustomHeader />
-
       </div>
 
       <div id="hero-image">
@@ -53,8 +49,7 @@ const Index = () => {
         </div>
       </div>
     </div>
-  
-}
-
+  );
+};
 
 export default Index;

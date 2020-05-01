@@ -1,52 +1,69 @@
 body {
-    margin: 0;
-  }
-  
-  #home-page {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #btns {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #btns-cont {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #btns-box {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    bottom: 15%;
-  }
-  
-  #btn-margin {
-    margin-bottom: 25px;
-  }
-  
-  #prog-box {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #prog-cont {
-    position: fixed;
-    bottom: 5%;
-  }
-  
-  #header {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  }
-  
-  #hero-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
-  }
+  margin: 0;
+}
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+}
+
+#btns-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+#btns-box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  bottom: 15%;
+}
+
+#btn-margin {
+  margin-bottom: 25px;
+}
+
+#prog-box {
+  display: flex;
+  justify-content: center;
+}
+
+#prog-cont {
+  position: fixed;
+  bottom: 5%;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+#quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+#quiz-contents {
+  flex-direction: row;
+  width: 300px;
+  height: 300px;
+}
+
+#quiz-contents p {
+  text-align: center;
+}

@@ -7,7 +7,7 @@ const BodyText = ({ text, color, fontSize, fontStyle, fontWeight }) => (
       color: color,
       fontSize: fontSize,
       fontStyle: fontStyle,
-      fontWeight,
+      fontWeight: fontWeight,
     }}
   >
     {text}
