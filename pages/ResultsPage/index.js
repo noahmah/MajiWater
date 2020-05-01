@@ -7,9 +7,15 @@ import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
-import { data, ChangeData } from "../data";
+import { data, ChangeData, checkPath } from "../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import {useEffect} from 'react';
+import ResultPaths from "../resultPath";
+
 console.log(data);
+
+
+checkPath();
 
 const ResultPage = () => {
   function nextPage() {
@@ -49,6 +55,8 @@ const ResultPage = () => {
         ) : null}
         <BodyText fontSize="18px" text={data.results[5].question} />
         <BodyText color="#000000" text={data.results[5].answer} />
+        <BodyText text={data.resultPath}/>
+
         {/* <BodyText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' /> */}
         <div id="horizontal-line"></div>
       </div>
