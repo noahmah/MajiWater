@@ -7,7 +7,7 @@ import CustomButton from "../comps/Joe_Buttons";
 import "../pages/HomePage/home_page.css";
 import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
-import { data, ChangeData } from "./data";
+import { data, ChangeData } from "../data";
 import CustomMenu from "../comps/Noah_Menu";
 console.log(data);
 
