@@ -7,7 +7,7 @@ import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
-import { data, ChangeData, checkPath } from "../data";
+import { data, ChangeData, checkPath } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 import {useEffect} from 'react';
 import ResultPaths from "../resultPath";

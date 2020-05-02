@@ -162,7 +162,3 @@ export function checkPath(){
     }
 }
 
-export const Test = () => {
-//Testing
-}
-export default Test;
