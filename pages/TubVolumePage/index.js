@@ -6,7 +6,7 @@ import ImgFrame from "../../comps/Alex_Images";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from "next/router";
 import ProgBar from "../../comps/Noah_ProgressBar";
-import { data, ChangeData } from "../data";
+import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 console.log(data);
 
