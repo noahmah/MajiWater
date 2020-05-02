@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Alex_Sliders/slider.css";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from "next/router";
-import { data, ChangeData, checkPath } from "../../pages/data";
+import { data, ChangeData, checkPath } from "../../data";
 console.log(data);
 
 
