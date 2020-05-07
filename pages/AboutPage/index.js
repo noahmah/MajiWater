@@ -1,4 +1,4 @@
-
+import {data} from "../../data";
 import React from "react";
 import "./about_page.css";
 import CustomHeader from "../../comps/Joe_Header";
@@ -14,7 +14,8 @@ const AboutPage = () => {
 
 
     function nextPage() {
-        Router.push("/LaundryPage");
+        Router.push("/CleansePage");
+        data.page = "Cleanse";
     }
 
     return <div>
@@ -28,14 +29,7 @@ const AboutPage = () => {
         <div id="btns">
             <div id="btns-cont">
                 <div id="btns-box">
-                    <CustomButton color="#F7FAFD" text="Next" onclick={nextPage} />
-                </div>
-            </div>
-        </div>
-        <div id="prog-box">
-            <div id="prog-cont">
-                <div id="prog-bar">
-                    <ProgBar />
+                    <CustomButton color="#F7FAFD" text="Start Quiz" onclick={nextPage} />
                 </div>
             </div>
         </div>

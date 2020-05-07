@@ -15,9 +15,10 @@ import {useEffect} from 'react';
 console.log(data);
 
 
-checkPath();
-
 const ResultPage = () => {
+
+  checkPath();
+
   function nextPage() {
     Router.push("/../");
   }
