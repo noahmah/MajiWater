@@ -15,9 +15,10 @@ import {useEffect} from 'react';
 console.log(data);
 
 
-checkPath();
-
 const ResultPage = () => {
+
+  checkPath();
+
   function nextPage() {
     Router.push("/../");
   }
@@ -64,10 +65,20 @@ const ResultPage = () => {
         ) : null}
         <BodyText fontSize="18px" text={data.results[5].question} />
         <BodyText color="#000000" text={data.results[5].answer} />
-        <BodyText text={data.resultPath}/>
+        
+          <div id="horizontal-line"></div>
 
-        {/* <BodyText text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' /> */}
-        <div id="horizontal-line"></div>
+          <BodyText text={data.waterUsage}/>
+        <BodyText text={data.fact}/>
+        {data.resultPath.suggestion1 != "" ? (
+          <BodyText text={data.resultPath.suggestion1}/>
+        ) : null}
+        {data.resultPath.suggestion2 != "" ? (
+          <BodyText text={data.resultPath.suggestion2}/>
+        ) : null}
+        {data.resultPath.suggestion3 != "" ? (
+          <BodyText text={data.resultPath.suggestion3}/>
+        ) : null}
       </div>
       <div id="hero-image">
         <ImgFrame

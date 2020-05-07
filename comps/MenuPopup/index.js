@@ -20,7 +20,8 @@ const MenuPopup = ({pos}) => {
                  data.page = "Cleanse"
                  break;
             case 3:
-                 Router.push("/../");
+                 Router.push("/AboutPage");
+                 data.page = "About"
                  break;
         }
         
