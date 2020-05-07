@@ -32,6 +32,8 @@ export var data = {
 
 }
 
+
+
 // if(process.browser){
 //     var sessiondata = sessionStorage.getItem("data");
 //     data=JSON.parse(sessiondata);

@@ -19,6 +19,7 @@ const CustomMenu = ({ backClick, onclick }) => {
   console.log(slidePos,menuState);
 
 
+
   function menuSlide() {
     if (menuState === false){
       ChangePos(0);
