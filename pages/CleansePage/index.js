@@ -8,32 +8,44 @@ import Router from "next/router";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { useEffect } from "react";
+
 console.log(data);
 
 const CleansePage = () => {
   function nextPage() {
+    document.querySelector("#CleansePage").style.opacity = 0;
     if (data.results[0].answer === "Shower") {
-      data.page = "Shower Length";
-      Router.push("/ShowerLengthPage");
+      setTimeout(function () {
+        Router.push("/ShowerLengthPage");
+        data.page = "Shower Length";
+      }, 1000);
     } else if (data.results[0].answer === "Bath") {
-      data.page = "Tub Volume";
-      Router.push("/TubVolumePage");
+      document.querySelector("#CleansePage").style.opacity = 0;
+      setTimeout(function () {
+        Router.push("/TubVolumePage");
+        data.page = "Tub Volume";
+      }, 1000);
     }
   }
 
-  
-  function previousPage(){
+  function previousPage() {
     Router.push("/../");
-      }
+  }
 
- return<div>
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#CleansePage").style.opacity = 1;
+    }, 50);
+  });
 
+  return (
+    <div id="CleansePage">
       <div>
         <CustomMenu
-        backClick = {()=>{
-          previousPage();
-        }}
-      
+          backClick={() => {
+            previousPage();
+          }}
         />
       </div>
       <div id="quiz">
@@ -75,7 +87,7 @@ const CleansePage = () => {
         </div>
       </div>
     </div>
-
+  );
 };
 
 export default CleansePage;

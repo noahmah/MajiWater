@@ -52,3 +52,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+#white-box {
+  position: absolute;
+  background: white;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+}

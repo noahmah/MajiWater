@@ -3,9 +3,8 @@ import "../Alex_Sliders/slider.css";
 import CustomButton from "../../comps/Joe_Buttons";
 import Router from "next/router";
 import { data, ChangeData, checkPath } from "../../data";
+
 console.log(data);
-
-
 
 const Slider = () => {
   function nextPage() {
@@ -45,7 +44,7 @@ const Slider = () => {
         text="Next"
         onclick={() => {
           if (data.page === "Shower Length") {
-            switch (val){
+            switch (val) {
               case "1":
                 ChangeData("10 Minutes", 1);
                 nextPage();
@@ -56,7 +55,6 @@ const Slider = () => {
                 ChangeData("20 Minutes", 1);
                 nextPage();
             }
-    
           } else if (data.page === "Laundry Load") {
             ChangeData(String(val), 4);
             nextPage();

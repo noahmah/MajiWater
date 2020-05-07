@@ -9,27 +9,40 @@ import ProgBar from "../../comps/Noah_ProgressBar";
 import Slider from "../../comps/Alex_Sliders";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { useEffect } from "react";
+
 console.log(data);
 
 const ShowerLengthPage = () => {
   function nextPage() {
-    Router.push("/LaundryPage");
-    data.page = "Laundry";
+    document.querySelector("#showerlength-page").style.opacity = 0;
+    setTimeout(function () {
+      Router.push("/LaundryPage");
+      data.page = "Laundry";
+    }, 1000);
   }
 
-  function previousPage(){
-    Router.push("/CleansePage");
-    data.page = "Cleanse";
-      }
+  function previousPage() {
+    document.querySelector("#showerlength-page").style.opacity = 0;
+    setTimeout(function () {
+      Router.push("/CleansePage");
+      data.page = "Cleanse";
+    }, 1000);
+  }
 
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#showerlength-page").style.opacity = 1;
+    }, 50);
+  });
 
   return (
-    <div>
+    <div id="showerlength-page">
       <div>
-        <CustomMenu 
-         backClick = {()=>{
-          previousPage();
-        }}
+        <CustomMenu
+          backClick={() => {
+            previousPage();
+          }}
         />
       </div>
       <div id="quiz">

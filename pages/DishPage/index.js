@@ -9,33 +9,49 @@ import Link from "next/link";
 import Router from "next/router";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { useEffect } from "react";
+
 console.log(data);
 
 const DishPage = () => {
   function nextPage() {
-    data.page = "Results";
-    Router.push("/ResultsPage");
+    document.querySelector("#Dish-Page").style.opacity = 0;
+    setTimeout(function () {
+      data.page = "Results";
+      Router.push("/ResultsPage");
+    }, 1000);
   }
 
-  function previousPage(){
-    if(data.results[3].answer === "Yes"){
-      data.page = "Laundry Load";
-      Router.push("/LaundryLoadsPage");
-      
-      }
-      else if(data.results[3].answer === "No"){
+  function previousPage() {
+    if (data.results[3].answer === "Yes") {
+      document.querySelector("#Dish-Page").style.opacity = 0;
+      setTimeout(function () {
+        data.page = "Laundry Load";
+        Router.push("/LaundryLoadsPage");
+      }, 1000);
+    } else if (data.results[3].answer === "No") {
+      document.querySelector("#hDish-Page").style.opacity = 0;
+      setTimeout(function () {
         data.page = "Laundry";
         Router.push("/LaundryPage");
-     }
+      }, 1000);
+    }
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#Dish-Page").style.opacity = 1;
+    }, 50);
+  });
+
   return (
-    <div>
+    <div id="Dish-Page">
       <div>
-        <CustomMenu 
-        backClick = {()=>{
-          previousPage();
-        }}/>
+        <CustomMenu
+          backClick={() => {
+            previousPage();
+          }}
+        />
       </div>
       <div id="quiz">
         <div id="quiz-contents">
