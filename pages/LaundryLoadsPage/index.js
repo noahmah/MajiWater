@@ -8,6 +8,7 @@ import Router from "next/router";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Slider from "../../comps/Alex_Sliders";
 import CustomMenu from "../../comps/Noah_Menu";
+import {data} from "../../data"
 
 const LaundryLoadsPage = () => {
   function nextPage() {
@@ -15,10 +16,18 @@ const LaundryLoadsPage = () => {
     Router.push("/DishPage");
   }
 
+  function previousPage(){
+    Router.push("/LaundryPage");
+    data.page = "Laundry"
+    }
+
   return (
     <div>
       <div>
-        <CustomMenu />
+        <CustomMenu
+        backClick = {()=>{
+          previousPage();
+        }} />
       </div>
       <div id="quiz">
         <div id="quiz-contents">

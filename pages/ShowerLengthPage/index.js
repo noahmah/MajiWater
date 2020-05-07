@@ -14,12 +14,23 @@ console.log(data);
 const ShowerLengthPage = () => {
   function nextPage() {
     Router.push("/LaundryPage");
+    data.page = "Laundry";
   }
+
+  function previousPage(){
+    Router.push("/CleansePage");
+    data.page = "Cleanse";
+      }
+
 
   return (
     <div>
       <div>
-        <CustomMenu />
+        <CustomMenu 
+         backClick = {()=>{
+          previousPage();
+        }}
+        />
       </div>
       <div id="quiz">
         <div id="quiz-contents">

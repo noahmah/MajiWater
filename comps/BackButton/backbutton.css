@@ -1,0 +1,17 @@
+.back {
+    position: absolute;
+    left: 10px;
+  }
+
+  .menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    width: 100%;
+  }
+  
+  .menu-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
