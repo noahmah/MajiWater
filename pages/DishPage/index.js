@@ -7,7 +7,7 @@ import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Link from "next/link";
 import Router from "next/router";
-import { data, ChangeData } from "../../data";
+import { data, ChangeData, checkPath } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 import { useEffect } from "react";
 
@@ -15,11 +15,13 @@ console.log(data);
 
 const DishPage = () => {
   function nextPage() {
+
     document.querySelector("#Dish-Page").style.opacity = 0;
     setTimeout(function () {
       data.page = "Results";
       Router.push("/ResultsPage");
     }, 1000);
+
   }
 
   function previousPage() {
