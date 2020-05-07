@@ -1,4 +1,4 @@
-import {data} from "../../data";
+import {data, Restart} from "../../data";
 import React from "react";
 import "./about_page.css";
 import CustomHeader from "../../comps/Joe_Header";
@@ -14,6 +14,7 @@ const AboutPage = () => {
 
 
     function nextPage() {
+        Restart();
         Router.push("/CleansePage");
         data.page = "Cleanse";
     }
