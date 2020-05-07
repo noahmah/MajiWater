@@ -9,6 +9,7 @@ import CustomHeader from "../Joe_Header";
 import MenuPopup from "../MenuPopup";
 import {useState} from "react";
 import {data} from "../../data";
+import Router from "next/router";
 
 const CustomMenu = ({ backClick, onclick }) => {
   
@@ -31,13 +32,20 @@ const CustomMenu = ({ backClick, onclick }) => {
     }
   }
 
+  function LogoHome(){
+    Router.push("/../");
+    data.page = "Home"
+  }
+
   return<div>
     <div className="curved">
       <div className="menu">
       {data.page != "Home" ? (
           <BackButton onclick={backClick}/>
         ) : null}
-        <div className="menu-btn" onClick={onclick}>
+        <div className="menu-btn" onClick={()=>{
+          LogoHome();
+        }}>
           <CustomHeader />
         </div>
         <HamButton onclick={()=>{
