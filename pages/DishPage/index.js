@@ -7,14 +7,17 @@ import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Link from "next/link";
 import Router from "next/router";
-import { data, ChangeData } from "../../data";
+import { data, ChangeData, checkPath } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 console.log(data);
 
 const DishPage = () => {
   function nextPage() {
     data.page = "Results";
+    console.log(data); 
     Router.push("/ResultsPage");
+
+    
   }
 
   function previousPage(){
