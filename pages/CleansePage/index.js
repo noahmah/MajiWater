@@ -21,30 +21,20 @@ const CleansePage = () => {
     }
   }
 
-  return (
-    <div>
-      {/* <div id="header">
-            <CustomHeader />
-        </div>
-        <div id="hero-image">
-            <BodyText text="Did you shower or take a bath today" />
-        </div>
-        <div id="hero-image">
-            <ImgFrame />
-        </div>
-        <div id="btns">
-            <div id="btns-cont">
-                <div id="btns-box">
-                    <div id="btn-margin">
-                        <CustomButton color="#F7FAFD" text="Bath" onclick={nextPage} />
-                    </div>
-                    <CustomButton color="#F7FAFD" text="Shower" onclick={nextPage} />
-                </div>
-            </div>
-        <CustomHeader />
-      </div> */}
+  
+  function previousPage(){
+    Router.push("/../");
+      }
+
+ return<div>
+
       <div>
-        <CustomMenu />
+        <CustomMenu
+        backClick = {()=>{
+          previousPage();
+        }}
+      
+        />
       </div>
       <div id="quiz">
         <div id="quiz-contents">
@@ -85,7 +75,7 @@ const CleansePage = () => {
         </div>
       </div>
     </div>
-  );
+
 };
 
 export default CleansePage;

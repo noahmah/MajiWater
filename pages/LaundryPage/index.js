@@ -21,10 +21,26 @@ const LaundryPage = () => {
       Router.push("/DishPage");
     }
   }
+
+  function previousPage(){
+    if(data.results[0].answer === "Shower"){
+    data.page = "Shower Length";
+    Router.push("/ShowerLengthPage");
+    
+    }
+    else if(data.results[0].answer === "Bath"){
+      data.page = "Tub Volume";
+      Router.push("/TubVolumePage");
+    }
+  }
   return (
     <div>
       <div>
-        <CustomMenu />
+        <CustomMenu
+           backClick = {()=>{
+            previousPage();
+          }}
+        />
       </div>
       <div id="quiz">
         <div id="quiz-contents">
@@ -68,4 +84,5 @@ const LaundryPage = () => {
     </div>
   );
 };
+
 export default LaundryPage;

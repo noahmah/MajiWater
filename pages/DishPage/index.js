@@ -17,10 +17,25 @@ const DishPage = () => {
     Router.push("/ResultsPage");
   }
 
+  function previousPage(){
+    if(data.results[3].answer === "Yes"){
+      data.page = "Laundry Load";
+      Router.push("/LaundryLoadsPage");
+      
+      }
+      else if(data.results[3].answer === "No"){
+        data.page = "Laundry";
+        Router.push("/LaundryPage");
+     }
+  }
+
   return (
     <div>
       <div>
-        <CustomMenu />
+        <CustomMenu 
+        backClick = {()=>{
+          previousPage();
+        }}/>
       </div>
       <div id="quiz">
         <div id="quiz-contents">

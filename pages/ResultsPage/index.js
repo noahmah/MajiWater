@@ -22,10 +22,19 @@ const ResultPage = () => {
     Router.push("/../");
   }
 
+  
+  function previousPage(){
+    data.page = "Dish Wash";
+    Router.push("/DishPage");
+    }
+
   return (
     <div>
       <div>
-        <CustomMenu />
+        <CustomMenu
+        backClick = {()=>{
+          previousPage();
+        }}  />
       </div>
       <div id="results-header">
         <CustomHeader text="Results" />

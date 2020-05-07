@@ -18,7 +18,7 @@ const Slider = () => {
     }
   }
 
-  const [val, setVal] = useState("2");
+  const [val, setVal] = useState("3");
 
   return (
     <div id="slider-btn-box">

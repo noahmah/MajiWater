@@ -16,13 +16,23 @@ const TubVolumePage = () => {
     Router.push("/LaundryPage");
   }
 
+  function previousPage(){
+    Router.push("/CleansePage");
+    data.page = "Cleanse";
+      }
+
+
   return (
     <div>
       {/* <div id="header">
             <CustomHeader />
         </div> */}
       <div>
-        <CustomMenu />
+        <CustomMenu 
+          backClick = {()=>{
+           previousPage();
+         }}
+        />
       </div>
       <div id="quiz">
         <div id="quiz-contents">

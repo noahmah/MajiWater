@@ -9,14 +9,27 @@ import ProgBar from "../comps/Noah_ProgressBar";
 import ImgFrame from "../comps/Alex_Images";
 import { data } from "../data";
 import CustomMenu from "../comps/Noah_Menu";
-console.log(data);
+import MenuPopup from "../comps/MenuPopup";
+import {useEffect} from "react";
 
 const Index = () => {
+
+  data.page = "Home";
   console.log(data);
 
-  function nextPage() {
-    Router.push("/CleansePage");
-    data.page = "Cleanse";
+  function nextPage(num) {
+    switch(num){
+      case 1:
+        Router.push("/CleansePage");
+        data.page = "Cleanse";
+        break;
+      case 2:
+        Router.push("/AboutPage");
+        data.page = "Page";
+        break;
+
+
+    }
   }
 
   return (
@@ -34,17 +47,14 @@ const Index = () => {
           <div id="btns-box">
             <div id="btn-margin">
               {/* The color= isn't working */}
-              <CustomButton color="#F7FAFD" text="Start" onclick={nextPage} />
+              <CustomButton color="#F7FAFD" text="Start" onclick={()=>{
+                nextPage(1);
+              }} />
             </div>
             {/* Need to change on click from next page to AboutPage when about page is made */}
-            <CustomButton color="#F7FAFD" text="About" onclick={nextPage} />
-          </div>
-        </div>
-      </div>
-      <div id="prog-box">
-        <div id="prog-cont">
-          <div id="prog-bar">
-            <ProgBar />
+            <CustomButton color="#F7FAFD" text="About" onclick={()=>{
+                nextPage(2);
+              }} />
           </div>
         </div>
       </div>
