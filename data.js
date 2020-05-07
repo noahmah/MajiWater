@@ -27,6 +27,7 @@ export var data = {
         }
     ],
     page: "", 
+    resultPath: ""
 
 
 }
@@ -74,6 +75,7 @@ export function Restart(){
             }
         ],
         page: "", 
+        resultPath: ""
 }
 }
 
