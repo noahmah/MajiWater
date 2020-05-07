@@ -1,6 +1,11 @@
 body {
   margin: 0;
 }
+#TubVolume-Page {
+  position: relative;
+  opacity: 0;
+  transition: opacity 1s;
+}
 
 #home-page {
   display: flex;

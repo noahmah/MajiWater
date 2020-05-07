@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+#CleansePage {
+  display: relativity;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 #home-page {
   display: flex;
   flex-direction: column;

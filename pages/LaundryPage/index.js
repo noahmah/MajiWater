@@ -9,35 +9,48 @@ import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { useEffect } from "react";
+
 console.log(data);
 
 const LaundryPage = () => {
   function nextPage() {
     if (data.results[3].answer === "Yes") {
-      data.page = "Laundry Load";
-      Router.push("/LaundryLoadsPage");
+      document.querySelector("#Laundry-Page").style.opacity = 0;
+      setTimeout(function () {
+        data.page = "Laundry Load";
+        Router.push("/LaundryLoadsPage");
+      }, 1000);
     } else {
-      data.page = "Dish Wash";
-      Router.push("/DishPage");
+      document.querySelector("#Laundry-Page").style.opacity = 0;
+      setTimeout(function () {
+        data.page = "Dish Wash";
+        Router.push("/DishPage");
+      }, 1000);
     }
   }
 
-  function previousPage(){
-    if(data.results[0].answer === "Shower"){
-    data.page = "Shower Length";
-    Router.push("/ShowerLengthPage");
-    
-    }
-    else if(data.results[0].answer === "Bath"){
+  function previousPage() {
+    if (data.results[0].answer === "Shower") {
+      data.page = "Shower Length";
+      Router.push("/ShowerLengthPage");
+    } else if (data.results[0].answer === "Bath") {
       data.page = "Tub Volume";
       Router.push("/TubVolumePage");
     }
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#Laundry-Page").style.opacity = 1;
+    }, 50);
+  });
+
   return (
-    <div>
+    <div id="Laundry-Page">
       <div>
         <CustomMenu
-           backClick = {()=>{
+          backClick={() => {
             previousPage();
           }}
         />

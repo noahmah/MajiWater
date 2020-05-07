@@ -8,30 +8,43 @@ import Router from "next/router";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { useEffect } from "react";
+
 console.log(data);
 
 const TubVolumePage = () => {
   function nextPage() {
-    data.page = "Laundry";
-    Router.push("/LaundryPage");
+    document.querySelector("#TubVolume-Page").style.opacity = 0;
+    setTimeout(function () {
+      Router.push("/LaundryPage");
+      data.page = "Laundry";
+    }, 1000);
   }
 
-  function previousPage(){
-    Router.push("/CleansePage");
-    data.page = "Cleanse";
-      }
+  function previousPage() {
+    document.querySelector("#TubVolume-Page").style.opacity = 0;
+    setTimeout(function () {
+      Router.push("/CleansePage");
+      data.page = "Cleanse";
+    }, 1000);
+  }
 
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#TubVolume-Page").style.opacity = 1;
+    }, 50);
+  });
 
   return (
-    <div>
+    <div id="TubVolume-Page">
       {/* <div id="header">
             <CustomHeader />
         </div> */}
       <div>
-        <CustomMenu 
-          backClick = {()=>{
-           previousPage();
-         }}
+        <CustomMenu
+          backClick={() => {
+            previousPage();
+          }}
         />
       </div>
       <div id="quiz">

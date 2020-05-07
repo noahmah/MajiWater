@@ -10,27 +10,38 @@ import ImgFrame from "../comps/Alex_Images";
 import { data } from "../data";
 import CustomMenu from "../comps/Noah_Menu";
 import MenuPopup from "../comps/MenuPopup";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
 const Index = () => {
-
   data.page = "Home";
   console.log(data);
 
   function nextPage(num) {
-    switch(num){
+    switch (num) {
       case 1:
-        Router.push("/CleansePage");
-        data.page = "Cleanse";
+        document.querySelector("#home-page").style.opacity = 0;
+        setTimeout(function () {
+          Router.push("/CleansePage");
+          data.page = "Cleanse";
+        }, 1000);
+
         break;
       case 2:
-        Router.push("/AboutPage");
-        data.page = "Page";
+        document.querySelector("#home-page").style.opacity = 0;
+        setTimeout(function () {
+          Router.push("/AboutPage");
+          data.page = "Page";
+        }, 1000);
+
         break;
-
-
     }
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#home-page").style.opacity = 1;
+    }, 50);
+  });
 
   return (
     <div id="home-page">
@@ -47,14 +58,22 @@ const Index = () => {
           <div id="btns-box">
             <div id="btn-margin">
               {/* The color= isn't working */}
-              <CustomButton color="#F7FAFD" text="Start" onclick={()=>{
-                nextPage(1);
-              }} />
+              <CustomButton
+                color="#F7FAFD"
+                text="Start"
+                onclick={() => {
+                  nextPage(1);
+                }}
+              />
             </div>
             {/* Need to change on click from next page to AboutPage when about page is made */}
-            <CustomButton color="#F7FAFD" text="About" onclick={()=>{
+            <CustomButton
+              color="#F7FAFD"
+              text="About"
+              onclick={() => {
                 nextPage(2);
-              }} />
+              }}
+            />
           </div>
         </div>
       </div>
