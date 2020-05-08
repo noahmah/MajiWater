@@ -5,10 +5,9 @@ import './header.css';
 const CustomHeader = ({ text }) => <div>
   <div className="headerStyles">
     {/* {text} */}
-    <img className="logo" src={require('./MajiLogo.svg')}></img>
+    <svg src="./MajiLogo.svg"></svgg>
   </div>
 </div>
-
 
 CustomHeader.defaultProps = {
   text: "MAJI",
