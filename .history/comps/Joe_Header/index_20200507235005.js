@@ -1,11 +1,11 @@
 import React from 'react';
-import './MajiLogo.svg';
+
 import './header.css';
 
 const CustomHeader = ({ text }) => <div>
   <div className="headerStyles">
     {/* {text} */}
-    <img className="logo" src={require('./MajiLogo.svg')}></img>
+    <img src={require('./MajiLogo.svg')}></img>
   </div>
 </div>
 

@@ -7,58 +7,58 @@ import BackButton from "../BackButton";
 import HamButton from "../HamburgerButton";
 import CustomHeader from "../Joe_Header";
 import MenuPopup from "../MenuPopup";
-import { useState } from "react";
-import { data } from "../../data";
+import {useState} from "react";
+import {data} from "../../data";
 import Router from "next/router";
 
 const CustomMenu = ({ backClick, onclick }) => {
-
+  
   const [slidePos, ChangePos] = useState(-200);
   const [menuState, ChangeState] = useState(false);
 
-  console.log(slidePos, menuState);
+  console.log(slidePos,menuState);
 
 
 
   function menuSlide() {
-    if (menuState === false) {
+    if (menuState === false){
       ChangePos(0);
       ChangeState(true);
-      console.log(slidePos, menuState);
+      console.log(slidePos,menuState);
     }
-    else {
+    else{
       ChangePos(-200);
       ChangeState(false);
 
     }
   }
 
-  function LogoHome() {
+  function LogoHome(){
     Router.push("/../");
     data.page = "Home"
   }
 
-  return <div>
-    <div className="wave">
+  return<div>
+    <div className="curved">
       <div className="menu">
-        {data.page != "Home" ? (
-          <BackButton onclick={backClick} />
+      {data.page != "Home" ? (
+          <BackButton onclick={backClick}/>
         ) : null}
-        <div className="menu-btn" onClick={() => {
+        <div className="menu-btn" onClick={()=>{
           LogoHome();
         }}>
           <CustomHeader />
         </div>
-        <HamButton onclick={() => {
+        <HamButton onclick={()=>{
           menuSlide();
-        }} />
+        }}/>
       </div>
-
+      
     </div>
     <MenuPopup
-      pos={slidePos}
+    pos = {slidePos}
     />
-  </div>
+    </div>
 }
 
 export default CustomMenu;
