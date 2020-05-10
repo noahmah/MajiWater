@@ -1,3 +1,6 @@
+html{
+  display: flex;
+}
 
 .frame {
   width: 300px;

@@ -1,3 +1,6 @@
+html{
+  display: grid;
+}
 
 .frame {
   width: 300px;
