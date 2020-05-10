@@ -59,7 +59,7 @@ const LaundryLoadsPage = () => {
       <div id="prog-box">
         <div id="prog-cont">
           <div id="prog-bar">
-            <ProgBar />
+            <ProgBar color="linear-gradient(to right, #00ffe2 60%, #0079ff 100%)" />
           </div>
         </div>
       </div>

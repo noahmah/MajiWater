@@ -9,33 +9,30 @@ import CustomButton from "../../comps/Joe_Buttons";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData, checkPath } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
-import {useEffect} from 'react';
-
+import { useEffect } from "react";
 
 console.log(data);
 
-
 const ResultPage = () => {
-
   checkPath();
 
   function nextPage() {
     Router.push("/../");
   }
 
-  
-  function previousPage(){
+  function previousPage() {
     data.page = "Dish Wash";
     Router.push("/DishPage");
-    }
+  }
 
   return (
     <div>
       <div>
         <CustomMenu
-        backClick = {()=>{
-          previousPage();
-        }}  />
+          backClick={() => {
+            previousPage();
+          }}
+        />
       </div>
       <div id="results-header">
         <CustomHeader text="Results" />
@@ -65,19 +62,19 @@ const ResultPage = () => {
         ) : null}
         <BodyText fontSize="18px" text={data.results[5].question} />
         <BodyText color="#000000" text={data.results[5].answer} />
-        
-          <div id="horizontal-line"></div>
 
-          <BodyText text={data.waterUsage}/>
-        <BodyText text={data.fact}/>
+        <div id="horizontal-line"></div>
+
+        <BodyText text={data.waterUsage} />
+        <BodyText text={data.fact} />
         {data.resultPath.suggestion1 != "" ? (
-          <BodyText text={data.resultPath.suggestion1}/>
+          <BodyText text={data.resultPath.suggestion1} />
         ) : null}
         {data.resultPath.suggestion2 != "" ? (
-          <BodyText text={data.resultPath.suggestion2}/>
+          <BodyText text={data.resultPath.suggestion2} />
         ) : null}
         {data.resultPath.suggestion3 != "" ? (
-          <BodyText text={data.resultPath.suggestion3}/>
+          <BodyText text={data.resultPath.suggestion3} />
         ) : null}
       </div>
       <div id="hero-image">
@@ -88,7 +85,7 @@ const ResultPage = () => {
         />
       </div>
       <div id="prog-box">
-        <ProgBar />
+        <ProgBar color="linear-gradient(to right, #00ffe2 100%, #0079ff 0%)" />
       </div>
     </div>
   );
