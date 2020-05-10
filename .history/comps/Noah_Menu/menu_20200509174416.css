@@ -5,8 +5,7 @@
   top: 0;
   margin: 0;
   padding: 0;
-  background-image: url("/Wave.png" );
-  background-size: cover;
+  background-image: url("../../wave.svg" ) no-repeat;
 
   min-height: 50%;
   width: 100vw;
