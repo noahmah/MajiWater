@@ -15,13 +15,11 @@ console.log(data);
 
 const DishPage = () => {
   function nextPage() {
-
     document.querySelector("#Dish-Page").style.opacity = 0;
     setTimeout(function () {
       data.page = "Results";
       Router.push("/ResultsPage");
     }, 1000);
-
   }
 
   function previousPage() {
@@ -93,7 +91,7 @@ const DishPage = () => {
       <div id="prog-box">
         <div id="prog-cont">
           <div id="prog-bar">
-            <ProgBar />
+            <ProgBar color="linear-gradient(to right, #00ffe2 80%, #0079ff 100%)" />
           </div>
         </div>
       </div>

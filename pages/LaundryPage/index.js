@@ -17,7 +17,6 @@ const LaundryPage = () => {
   function nextPage() {
     if (data.results[3].answer === "Yes") {
       document.querySelector("#Laundry-Page").style.opacity = 0;
-      document.querySelector("#Laundry-Page").style.right = "-100%";
       setTimeout(function () {
         data.page = "Laundry Load";
         Router.push("/LaundryLoadsPage");
@@ -93,7 +92,7 @@ const LaundryPage = () => {
         <div id="prog-box">
           <div id="prog-cont">
             <div id="prog-bar">
-              <ProgBar />
+              <ProgBar color="linear-gradient(to right, #00ffe2 60%, #0079ff 100%)" />
             </div>
           </div>
         </div>

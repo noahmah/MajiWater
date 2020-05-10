@@ -81,7 +81,7 @@ const CleansePage = () => {
         <div id="prog-box">
           <div id="prog-cont">
             <div id="prog-bar">
-              <ProgBar />
+              <ProgBar color="linear-gradient(to right, #00ffe2 1%, #0079ff 50%)" />
             </div>
           </div>
         </div>
