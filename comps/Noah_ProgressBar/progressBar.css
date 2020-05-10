@@ -13,7 +13,7 @@
   position: absolute;
   height: 10px;
   width: 320px;
-  background: linear-gradient(to right, #00ffe2 0%, #0079ff 100%);
+  /* background: linear-gradient(to right, #00ffe2 0%, #0079ff 100%); */
   border-radius: 85pt;
 }
 
