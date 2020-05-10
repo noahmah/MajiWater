@@ -1,6 +1,6 @@
 .wave {
   padding: 50px;
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   margin: 0;

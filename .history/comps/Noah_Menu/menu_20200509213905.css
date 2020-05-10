@@ -7,7 +7,7 @@
   padding: 0;
   background-image: url("/wave.svg" );
   background-size: contain;
-  min-height: 50%;
+  min-height: 30%;
   width: 100vw;
   height: 5vh;
   overflow: hidden;
