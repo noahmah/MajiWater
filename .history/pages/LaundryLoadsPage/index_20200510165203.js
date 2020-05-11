@@ -1,5 +1,5 @@
 import React from "react";
-import "./showerLength_page.css";
+import "./laundryLoads_page.css";
 import CustomHeader from "../../comps/Joe_Header";
 import BodyText from "../../comps/Noah_BodyText";
 import ImgFrame from "../../comps/Alex_Images";
@@ -7,41 +7,35 @@ import CustomButton from "../../comps/Joe_Buttons";
 import Router from "next/router";
 import ProgBar from "../../comps/Noah_ProgressBar";
 import Slider from "../../comps/Alex_Sliders";
-import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
+import { data } from "../../data";
 import { useEffect } from "react";
 
-
-
-
-
-console.log(data);
-
-const ShowerLengthPage = () => {
+const LaundryLoadsPage = () => {
   function nextPage() {
-    document.querySelector("#showerlength-page").style.opacity = 0;
+    document.querySelector("#LaundryLoads-Page").style.opacity = 0;
+    setTimeout(function () {
+      data.page = "Dish Wash";
+      Router.push("/DishPage");
+    }, 1000);
+  }
+
+  function previousPage() {
+    document.querySelector("#LaundryLoads-Page").style.opacity = 0;
     setTimeout(function () {
       Router.push("/LaundryPage");
       data.page = "Laundry";
     }, 1000);
   }
 
-  function previousPage() {
-    document.querySelector("#showerlength-page").style.opacity = 0;
-    setTimeout(function () {
-      Router.push("/CleansePage");
-      data.page = "Cleanse";
-    }, 1000);
-  }
-
   useEffect(() => {
     setTimeout(() => {
-      document.querySelector("#showerlength-page").style.opacity = 1;
+      document.querySelector("#LaundryLoads-Page").style.opacity = 1;
     }, 50);
   });
 
   return (
-    <div id="showerlength-page">
+    <div id="LaundryLoads-Page">
       <div>
         <CustomMenu
           backClick={() => {
@@ -51,10 +45,10 @@ const ShowerLengthPage = () => {
       </div>
       <div id="quiz">
         <div id="quiz-contents">
-          <BodyText text="How long was your shower?" />
+          <BodyText text="How many loads of laundry did you do?" />
           <ImgFrame
             img={
-              "https://images.unsplash.com/photo-1559819413-fbb8be49770b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
+              "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             }
           />
         </div>
@@ -63,14 +57,12 @@ const ShowerLengthPage = () => {
         <Slider
           data01="10"
           data02="15"
-          data03="30"
-
-        />
+          data03="30" />
       </div>
       <div id="prog-box">
         <div id="prog-cont">
           <div id="prog-bar">
-            <ProgBar color="linear-gradient(to right, #00ffe2 35%, #0079ff 100%)" />
+            <ProgBar />
           </div>
         </div>
       </div>
@@ -78,4 +70,4 @@ const ShowerLengthPage = () => {
   );
 };
 
-export default ShowerLengthPage;
+export default LaundryLoadsPage;

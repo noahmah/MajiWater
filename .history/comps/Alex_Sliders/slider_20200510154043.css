@@ -78,11 +78,5 @@
 }
 
 #line.b{
-  position: absolute;
-  top:0;
-}
-
-b{
-  position: absolute;
-  top:0;
+  color: rgb(255, 0, 106);
 }

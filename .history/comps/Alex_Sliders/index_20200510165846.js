@@ -55,9 +55,9 @@ const Slider = ({ data01, data02, data03 }) => {
           }}
         />
         <div className="lines">
-          <div id="line"><b>{data01}</b></div>
-          <div id="line"><b>{data02}</b></div>
-          <div id="line"><b>{data03}</b></div>
+          <div id="line"><b>1{data01}</b></div>
+          <div id="line"><b>1{data02}</b></div>
+          <div id="line"><b>1{data03}</b></div>
         </div>
       </div>
 

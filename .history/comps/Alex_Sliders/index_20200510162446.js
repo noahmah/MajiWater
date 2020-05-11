@@ -6,14 +6,21 @@ import { data, ChangeData, checkPath } from "../../data";
 
 console.log(data);
 
-// var data01 = 1;
-// var data02 = 2;
-// var data03 = 3;
+var data01 = 1;
+var data02 = 2;
+var data03 = 3;
+
+function replaceData() {
+  if (data.page === "Laundry Load") {
+    data01 = "Test";
+    data02 = "Test";
+    data03 = "Test";
+  }
+}
+replaceData()
 
 
-
-
-const Slider = ({ data01, data02, data03 }) => {
+const Slider = () => {
   function nextPage() {
     if (data.page === "Shower Length") {
       data.page = "Laundry";
@@ -24,19 +31,6 @@ const Slider = ({ data01, data02, data03 }) => {
     }
   }
 
-  // function replaceData() {
-  //   if (data.page === "Laundry Load") {
-  //     data01 = "1";
-  //     data02 = "2";
-  //     data03 = "3";
-  //   }
-  //   else if (data.page === "Shower Length") {
-  //     data01 = "10";
-  //     data02 = "15";
-  //     data03 = "20";
-  //   }
-  // }
-  // replaceData()
 
 
   const [val, setVal] = useState("3");
@@ -86,6 +80,7 @@ const Slider = ({ data01, data02, data03 }) => {
     </div>
   );
 };
+
 
 
 
