@@ -55,9 +55,9 @@ const LaundryLoadsPage = () => {
       </div>
       <div id="slider-contents">
         <Slider
-          data01="1"
-          data02="2"
-          data03="3" />
+          data01="10"
+          data02="15"
+          data03="30" />
       </div>
       <div id="prog-box">
         <div id="prog-cont">

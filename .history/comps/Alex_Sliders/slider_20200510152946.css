@@ -68,21 +68,3 @@
   display: flex;
   padding-top: 3px;
 }
-
-#dataTag{
-  height: 50%;
-  width: 3px;
-  background-color: #204377;
-  margin: 16%;
-  border-radius: 50px;
-}
-
-#line.b{
-  position: absolute;
-  top:0;
-}
-
-b{
-  position: absolute;
-  top:0;
-}

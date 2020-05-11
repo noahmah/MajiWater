@@ -24,19 +24,6 @@ const Slider = ({ data01, data02, data03 }) => {
     }
   }
 
-  // function replaceData() {
-  //   if (data.page === "Laundry Load") {
-  //     data01 = "1";
-  //     data02 = "2";
-  //     data03 = "3";
-  //   }
-  //   else if (data.page === "Shower Length") {
-  //     data01 = "10";
-  //     data02 = "15";
-  //     data03 = "20";
-  //   }
-  // }
-  // replaceData()
 
 
   const [val, setVal] = useState("3");
@@ -87,6 +74,19 @@ const Slider = ({ data01, data02, data03 }) => {
   );
 };
 
+function replaceData() {
+  if (data.page === "Laundry Load") {
+    data01 = "1";
+    data02 = "2";
+    data03 = "3";
+  }
+  else if (data.page === "Shower Length") {
+    data01 = "10";
+    data02 = "15";
+    data03 = "20";
+  }
+}
+replaceData()
 
 
 

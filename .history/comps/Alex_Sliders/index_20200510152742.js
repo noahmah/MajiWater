@@ -6,14 +6,7 @@ import { data, ChangeData, checkPath } from "../../data";
 
 console.log(data);
 
-// var data01 = 1;
-// var data02 = 2;
-// var data03 = 3;
-
-
-
-
-const Slider = ({ data01, data02, data03 }) => {
+const Slider = () => {
   function nextPage() {
     if (data.page === "Shower Length") {
       data.page = "Laundry";
@@ -23,21 +16,6 @@ const Slider = ({ data01, data02, data03 }) => {
       Router.push("/DishPage");
     }
   }
-
-  // function replaceData() {
-  //   if (data.page === "Laundry Load") {
-  //     data01 = "1";
-  //     data02 = "2";
-  //     data03 = "3";
-  //   }
-  //   else if (data.page === "Shower Length") {
-  //     data01 = "10";
-  //     data02 = "15";
-  //     data03 = "20";
-  //   }
-  // }
-  // replaceData()
-
 
   const [val, setVal] = useState("3");
 
@@ -54,10 +32,15 @@ const Slider = ({ data01, data02, data03 }) => {
             setVal(e.target.value);
           }}
         />
+        <div className="data">
+          <div id="dataTag">1</div>
+          <div id="dataTag">2</div>
+          <div id="dataTag">3</div>
+        </div>
         <div className="lines">
-          <div id="line"><b>{data01}</b></div>
-          <div id="line"><b>{data02}</b></div>
-          <div id="line"><b>{data03}</b></div>
+          <div id="line"></div>
+          <div id="line"></div>
+          <div id="line"></div>
         </div>
       </div>
 
@@ -86,8 +69,6 @@ const Slider = ({ data01, data02, data03 }) => {
     </div>
   );
 };
-
-
 
 
 export default Slider;

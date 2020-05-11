@@ -25,6 +25,7 @@
   align-items: center;
   display: flex;
   padding-top: 3px;
+  text-align: center;
 }
 
 #line {
@@ -33,6 +34,7 @@
   background-color: #204377;
   margin: 16%;
   border-radius: 50px;
+  text-align: center;
 }
 
 .slider::-webkit-slider-thumb {
@@ -85,4 +87,6 @@
 b{
   position: absolute;
   top:0;
+  text-align: center;
+  align-items: center;
 }

@@ -77,12 +77,6 @@
   border-radius: 50px;
 }
 
-#line.b{
-  position: absolute;
-  top:0;
-}
-
-b{
-  position: absolute;
-  top:0;
+#line.p{
+  color: rgb(255, 0, 106);
 }
