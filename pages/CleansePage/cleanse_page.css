@@ -3,9 +3,21 @@ body {
 }
 
 #CleansePage {
+  position: fixed;
   display: relativity;
   opacity: 0;
-  transition: opacity 1s;
+  left: 0;
+  transition: opacity 1s, left 1s;
+}
+
+#transition {
+  margin-left: 0;
+  margin-right: 0;
+  width: 375px;
+}
+
+#transition-box {
+  position: relative;
 }
 
 #home-page {
