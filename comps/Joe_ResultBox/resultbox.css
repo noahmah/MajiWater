@@ -1,0 +1,10 @@
+#horizontal-line2 {
+    border-bottom: 3px solid #204377;
+    width: 200px;
+    border-radius: 50px;
+  }
+
+.ResultBox{
+    margin-top:-10px ;
+    margin-bottom: 20px;
+}
