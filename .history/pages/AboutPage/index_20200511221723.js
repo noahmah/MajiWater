@@ -34,26 +34,21 @@ const AboutPage = () => {
           />
         </div>
         <div id="abt-text">
-          <BodyText text="About Maji" fontWeight="" fontSize="1.5em"></BodyText>
-          <BodyText text="Here at Maji, we are heavily concerned about the Uganda water Crisis, and we think you should too. According to the UN, to stay healthy and clean a human should consume around 50L of water per day. Unfortunately, in Uganda, the median consumption of water is less than 17L per person according to Uganda’s Poverty Eradication Action Plan." />
-          <BodyText text="Mission Statement" fontWeight="" fontSize="1.5em"></BodyText>
-          <BodyText text="Our Mission Statement is to shine a light on the Ugandan water crisis and to raise awareness for nonprofit organizations.."></BodyText>
+          <BodyText text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
         </div>
-
-      </div>
-      <div id="btns">
-        <div id="btns-cont">
-          <div id="btns-box">
-            <CustomButton
-              color="#F7FAFD"
-              text="Start Quiz"
-              onclick={nextPage}
-            />
+        <div id="btns">
+          <div id="btns-cont">
+            <div id="btns-box">
+              <CustomButton
+                color="#F7FAFD"
+                text="Start Quiz"
+                onclick={nextPage}
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   );
 };
 
