@@ -15,6 +15,7 @@ console.log(data);
 const TubVolumePage = () => {
   function nextPage() {
     document.querySelector("#TubVolume-Page").style.opacity = 0;
+    document.querySelector("#TubVolume-Page").style.left = "-100%";
     setTimeout(function () {
       Router.push("/LaundryPage");
       data.page = "Laundry";
@@ -37,48 +38,49 @@ const TubVolumePage = () => {
 
   return (
     <div id="TubVolume-Page">
-      {/* <div id="header">
-            <CustomHeader />
-        </div> */}
-      <div>
-        <CustomMenu
-          backClick={() => {
-            previousPage();
-          }}
-        />
-      </div>
-      <div id="quiz">
-        <div id="quiz-contents">
-          <BodyText text="How much water did you use in the bathtub?" />
-          <ImgFrame
-            img={
-              "https://images.unsplash.com/photo-1543918075-e3b2cc0cad11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-            }
-          />
-        </div>
-      </div>
-
-      <div id="btns">
-        <div id="btns-cont">
-          <div id="btns-box">
-            <div id="btn-margin">
-              <CustomButton
-                color="#F7FAFD"
-                text="Half"
-                onclick={() => {
-                  nextPage();
-                  ChangeData("Half", 2);
-                }}
-              />
-            </div>
-            <CustomButton
-              color="#F7FAFD"
-              text="Full"
-              onclick={() => {
-                nextPage();
-                ChangeData("Full", 2);
+      <div id="transition">
+        <div id="transition-box">
+          <div>
+            <CustomMenu
+              backClick={() => {
+                previousPage();
               }}
             />
+          </div>
+          <div id="quiz">
+            <div id="quiz-contents">
+              <BodyText text="How much water did you use in the bathtub?" />
+              <ImgFrame
+                img={
+                  "https://images.unsplash.com/photo-1543918075-e3b2cc0cad11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                }
+              />
+            </div>
+          </div>
+
+          <div id="btns">
+            <div id="btns-cont">
+              <div id="btns-box">
+                <div id="btn-margin">
+                  <CustomButton
+                    color="#F7FAFD"
+                    text="Half"
+                    onclick={() => {
+                      nextPage();
+                      ChangeData("Half", 2);
+                    }}
+                  />
+                </div>
+                <CustomButton
+                  color="#F7FAFD"
+                  text="Full"
+                  onclick={() => {
+                    nextPage();
+                    ChangeData("Full", 2);
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

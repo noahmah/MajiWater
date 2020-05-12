@@ -17,12 +17,14 @@ const LaundryPage = () => {
   function nextPage() {
     if (data.results[3].answer === "Yes") {
       document.querySelector("#Laundry-Page").style.opacity = 0;
+      document.querySelector("#Laundry-Page").style.left = "-100%";
       setTimeout(function () {
         data.page = "Laundry Load";
         Router.push("/LaundryLoadsPage");
       }, 1000);
     } else {
       document.querySelector("#Laundry-Page").style.opacity = 0;
+      document.querySelector("#Laundry-Page").style.left = "-100%";
       setTimeout(function () {
         data.page = "Dish Wash";
         Router.push("/DishPage");
@@ -57,35 +59,39 @@ const LaundryPage = () => {
         />
       </div>
       <div id="Laundry-Page">
-        <div id="quiz">
-          <div id="quiz-contents">
-            <BodyText text="Did you do the laundry today?" />
-            <ImgFrame
-              img={
-                "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80"
-              }
-            />
-          </div>
-        </div>
-        <div id="btns">
-          <div id="btns-cont">
-            <div id="btns-box">
-              <div id="btn-margin">
-                <CustomButton
-                  text="Yes"
-                  onclick={() => {
-                    ChangeData("Yes", 3);
-                    nextPage();
-                  }}
+        <div id="transition">
+          <div id="transition-box">
+            <div id="quiz">
+              <div id="quiz-contents">
+                <BodyText text="Did you do the laundry today?" />
+                <ImgFrame
+                  img={
+                    "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80"
+                  }
                 />
               </div>
-              <CustomButton
-                text="No"
-                onclick={() => {
-                  ChangeData("No", 3);
-                  nextPage();
-                }}
-              />
+            </div>
+            <div id="btns">
+              <div id="btns-cont">
+                <div id="btns-box">
+                  <div id="btn-margin">
+                    <CustomButton
+                      text="Yes"
+                      onclick={() => {
+                        ChangeData("Yes", 3);
+                        nextPage();
+                      }}
+                    />
+                  </div>
+                  <CustomButton
+                    text="No"
+                    onclick={() => {
+                      ChangeData("No", 3);
+                      nextPage();
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
