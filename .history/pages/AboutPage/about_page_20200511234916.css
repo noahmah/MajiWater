@@ -17,13 +17,12 @@ body {
   flex-direction: column;
 }
 
-#btns-box-abt {
+#btns-box {
   position: unset;
   display: flex;
   flex-direction: column;
   align-self: center;
-  bottom: 10%;
-  margin-bottom: 50px;
+  bottom: 5%;
 }
 
 #prog-box {
@@ -59,6 +58,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   padding-top: 15px;
 }
