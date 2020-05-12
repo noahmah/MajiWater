@@ -48,10 +48,11 @@ const Index = () => {
       <div>
         <CustomMenu />
       </div>
-
-      <div id="hero-image">
-        {/* Tried using src to grab the logo but it didn't work */}
-        <ImgFrame />
+      <div id="hero-img-flex">
+        <div id="hero-image">
+          {/* Tried using src to grab the logo but it didn't work */}
+          <ImgFrame />
+        </div>
       </div>
       <div id="btns">
         <div id="btns-cont">
