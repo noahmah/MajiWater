@@ -55,9 +55,6 @@ body {
 
 .AbtAlign{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 200px;
-  padding-top: 15px;
+  margin-top: 500px;
 }
