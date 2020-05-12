@@ -42,8 +42,15 @@ body {
 }
 
 #hero-image {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25%;
+  top: 15%;
+}
+
+#hero-img-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
