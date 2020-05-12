@@ -15,6 +15,7 @@ console.log(data);
 const CleansePage = () => {
   function nextPage() {
     document.querySelector("#CleansePage").style.opacity = 0;
+    document.querySelector("#CleansePage").style.left = "-100%";
     if (data.results[0].answer === "Shower") {
       setTimeout(function () {
         Router.push("/ShowerLengthPage");
@@ -22,6 +23,7 @@ const CleansePage = () => {
       }, 1000);
     } else if (data.results[0].answer === "Bath") {
       document.querySelector("#CleansePage").style.opacity = 0;
+      document.querySelector("#CleansePage").style.left = "-100%";
       setTimeout(function () {
         Router.push("/TubVolumePage");
         data.page = "Tub Volume";
@@ -41,41 +43,45 @@ const CleansePage = () => {
 
   return (
     <div id="CleansePage">
-      <div>
-        <CustomMenu
-          backClick={() => {
-            previousPage();
-          }}
-        />
-      </div>
-      <div id="quiz">
-        <div id="quiz-contents">
-          <BodyText text="Did you shower or take a bath today" />
-          <ImgFrame />
-        </div>
-      </div>
-
-      <div id="btns">
-        <div id="btns-cont">
-          <div id="btns-box">
-            <div id="btn-margin">
-              <CustomButton
-                color="#F7FAFD"
-                text="Bath"
-                onclick={() => {
-                  ChangeData("Bath", 0);
-                  nextPage();
-                }}
-              />
-            </div>
-            <CustomButton
-              color="#F7FAFD"
-              text="Shower"
-              onclick={() => {
-                ChangeData("Shower", 0);
-                nextPage();
+      <div id="transition">
+        <div id="transition-box">
+          <div>
+            <CustomMenu
+              backClick={() => {
+                previousPage();
               }}
             />
+          </div>
+          <div id="quiz">
+            <div id="quiz-contents">
+              <BodyText text="Did you shower or take a bath today" />
+              <ImgFrame />
+            </div>
+          </div>
+
+          <div id="btns">
+            <div id="btns-cont">
+              <div id="btns-box">
+                <div id="btn-margin">
+                  <CustomButton
+                    color="#F7FAFD"
+                    text="Bath"
+                    onclick={() => {
+                      ChangeData("Bath", 0);
+                      nextPage();
+                    }}
+                  />
+                </div>
+                <CustomButton
+                  color="#F7FAFD"
+                  text="Shower"
+                  onclick={() => {
+                    ChangeData("Shower", 0);
+                    nextPage();
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
