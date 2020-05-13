@@ -23,6 +23,10 @@ const MenuPopup = ({pos}) => {
                  Router.push("/AboutPage");
                  data.page = "About"
                  break;
+            case 4:
+                 Router.push("/CharityPage");
+                 data.page = "Charity"
+                 break;
         }
         
     }
@@ -36,6 +40,9 @@ const MenuPopup = ({pos}) => {
       }}/>
       <CustomButton text="About" onclick={()=>{
             MenuButtons(3);  
+      }}/>
+      <CustomButton text="Charity" onclick={()=>{
+            MenuButtons(4);  
       }}/>
     </div>
 }

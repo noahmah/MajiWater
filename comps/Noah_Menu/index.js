@@ -13,7 +13,7 @@ import Router from "next/router";
 
 const CustomMenu = ({ backClick, onclick }) => {
 
-  const [slidePos, ChangePos] = useState(-200);
+  const [slidePos, ChangePos] = useState(-300);
   const [menuState, ChangeState] = useState(false);
 
   console.log(slidePos, menuState);
@@ -27,7 +27,7 @@ const CustomMenu = ({ backClick, onclick }) => {
       console.log(slidePos, menuState);
     }
     else {
-      ChangePos(-200);
+      ChangePos(-300);
       ChangeState(false);
 
     }
