@@ -59,6 +59,7 @@ const CleansePage = () => {
           <div id="quiz">
             <div id="quiz-contents">
               <BodyText
+                fontWeight="bold"
                 text="Did you shower or take a bath today"
                 color="#062D59"
               />
@@ -95,7 +96,7 @@ const CleansePage = () => {
       <div id="prog-box">
         <div id="prog-cont">
           <div id="prog-bar">
-            <ProgBar color="linear-gradient(to right, #00ffe2 1%, #0079ff 50%)" />
+            <ProgBar color="linear-gradient(to right, #00ffe2 1%, #fff 50%)" />
           </div>
         </div>
       </div>
