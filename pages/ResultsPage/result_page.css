@@ -96,6 +96,7 @@ body {
 #results-header {
   color: #204377;
   font-weight: bold;
+  
 }
 
 #horizontal-line {
@@ -110,4 +111,16 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+.UserAnswer{
+  margin: 6px;
+}
+
+.ChoseHeader{
+  margin: 7px;
+}
+
+.Charity{
+  margin: 15px;
 }

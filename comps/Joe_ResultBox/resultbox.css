@@ -5,6 +5,10 @@
   }
 
 .ResultBox{
-    margin-top:-10px ;
+    margin-top:10px ;
     margin-bottom: 20px;
+}
+
+.amountConsumedBox,.FactBox, .SuggestionBox{
+  margin: 8px;
 }
