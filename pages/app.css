@@ -48,8 +48,9 @@ body {
 }
 
 #hero-img-flex {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35%;
+  width: 100%;
 }

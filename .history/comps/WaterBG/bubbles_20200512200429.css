@@ -12,7 +12,7 @@ body {
 }
 
 .animation-area {
-  background: linear-gradient(to bottom, #fffdf7 30%, #2089ca 90%);
+  background: linear-gradient(to bottom, #bce7fd 50%, #0f3e84 125%);
   width: 100vw;
   height: 100vh;
 }
@@ -32,7 +32,7 @@ body {
   list-style: none;
   width: 25px;
   height: 25px;
-  background: linear-gradient(to bottom, #ffffffd6 50%, #134a9ba1 100%);
+  background: linear-gradient(to bottom, #ffffff98 50%, #0f3e8462 125%);
   animation: animate 20s linear infinite;
   bottom: -150px;
 }
@@ -50,7 +50,7 @@ body {
   width: 30px;
   height: 30px;
   animation-delay: 1.5s;
-  animation-duration: 17.1s;
+  animation-duration: 10.1s;
   border-radius: 100px;
 }
 
@@ -58,8 +58,8 @@ body {
   left: 70%;
   width: 100px;
   height: 100px;
-  animation-delay: -3s;
-  animation-duration: 11.5s;
+  animation-delay: 1.6s;
+  animation-duration: 15.5s;
   border-radius: 100px;
 }
 
@@ -68,7 +68,7 @@ body {
   width: 150px;
   height: 150px;
   animation-delay: 0.5s;
-  animation-duration: 10.4s;
+  animation-duration: 15.4s;
   border-radius: 100px;
 }
 
@@ -77,7 +77,7 @@ body {
   width: 40px;
   height: 40px;
   animation-delay: 0.3s;
-  animation-duration: 8.3s;
+  animation-duration: 12.3s;
   border-radius: 100px;
 }
 

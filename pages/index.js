@@ -11,6 +11,7 @@ import { data } from "../data";
 import CustomMenu from "../comps/Noah_Menu";
 import MenuPopup from "../comps/MenuPopup";
 import { useEffect } from "react";
+import CustomBG from "../comps/WaterBG";
 
 const Index = () => {
   data.page = "Home";
@@ -46,13 +47,17 @@ const Index = () => {
   return (
     <div id="home-page">
       <div>
+        <CustomBG />
       </div>
+      <div></div>
       <div id="hero-img-flex">
         <div id="hero-image">
           {/* Tried using src to grab the logo but it didn't work */}
           {/* <ImgFrame /> */}
-          <img className="logo1" src={require('../comps/Joe_Header/MajiLogo.svg')}></img>
-          
+          <img
+            className="logo1"
+            src={require("../comps/Joe_Header/MajiLogo.svg")}
+          ></img>
         </div>
       </div>
       <div id="btns">

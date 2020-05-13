@@ -9,6 +9,7 @@ import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 import { useEffect } from "react";
+import CustomBG from "../../comps/WaterBG";
 
 console.log(data);
 
@@ -45,6 +46,9 @@ const CleansePage = () => {
     <div id="CleansePage">
       <div id="transition">
         <div id="transition-box">
+          <div id="bg">
+            <CustomBG />
+          </div>
           <div>
             <CustomMenu
               backClick={() => {
@@ -54,7 +58,11 @@ const CleansePage = () => {
           </div>
           <div id="quiz">
             <div id="quiz-contents">
-              <BodyText text="Did you shower or take a bath today" />
+              <BodyText
+                fontWeight="bold"
+                text="Did you shower or take a bath today"
+                color="#062D59"
+              />
               <ImgFrame />
             </div>
           </div>
@@ -88,7 +96,7 @@ const CleansePage = () => {
       <div id="prog-box">
         <div id="prog-cont">
           <div id="prog-bar">
-            <ProgBar color="linear-gradient(to right, #00ffe2 1%, #0079ff 50%)" />
+            <ProgBar color="linear-gradient(to right, #00ffe2 1%, #fff 50%)" />
           </div>
         </div>
       </div>

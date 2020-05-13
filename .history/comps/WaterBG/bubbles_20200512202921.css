@@ -12,7 +12,7 @@ body {
 }
 
 .animation-area {
-  background: linear-gradient(to bottom, #fffdf7 30%, #2089ca 90%);
+  background: linear-gradient(to bottom, #d5e0fc 30%, #1c498c 90%);
   width: 100vw;
   height: 100vh;
 }
