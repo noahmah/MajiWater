@@ -12,13 +12,15 @@ import CustomMenu from "../../comps/Noah_Menu";
 import ResultBox from "../../comps/Joe_ResultBox";
 import { useEffect } from "react";
 
+
 console.log(data);
 
 const ResultPage = () => {
   checkPath();
 
   function nextPage() {
-    Router.push("/../");
+    Router.push("/CharityPage");
+    data.page = "Charity";
   }
 
   function previousPage() {
@@ -47,7 +49,7 @@ const ResultPage = () => {
         />
 
         <div className="UserAnswer">
-        <BodyText fontSize="16px"  text={data.results[0].question} />
+        <BodyText fontSize="16px"  text={data.results[0].question}></BodyText>
         <BodyText color="#000000" fontWeight="bold" text={data.results[0].answer} />
         </div>
 
@@ -103,9 +105,23 @@ const ResultPage = () => {
             suggestion2={data.resultPath.suggestion2}
             suggestion3={data.resultPath.suggestion3}
             />
-      
+
       </div>
+    
+      <div className="buttonCon">
+      <BodyText
+        text="Want to help?"
+        fontSize="22px"
+        fontWeight="Bold"
+        />
+      <CustomButton
+        text="Charity"
+        onclick={()=>{
+          nextPage();
+        }}
+        />
         
+      </div>
     </div>
   );
 };

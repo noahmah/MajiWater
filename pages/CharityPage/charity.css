@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+  }
+  
+  #home-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #btns {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #btns-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #btns-box {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    bottom: 5%;
+  }
+  
+  #prog-box {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #prog-cont {
+    position: fixed;
+    bottom: 5%;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  
+  #hero-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+  }
+  
+  #abt-text {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .AbtAlign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-top: 15px;
+  }
+
+  .CharityBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .buttonBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CharityButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+    -2px -2px 4px rgba(116, 145, 177, 0.25);
+  }
+
+  #lifeWater{
+    margin-top: 50px;
+    height: 90%;
+    width: 90%;
+  background-image: url("/lifewater-logo.png" );
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+  #waterProject{
+    height: 70%;
+    width: 70%;
+    background-image: url("/download.png" );
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+  #waterAid{
+      margin-top: 30px;
+    height: 100%;
+    width: 100%;
+  background-image: url("/wateraid-social-logo.jpg" );
+  background-size: contain;
+  background-repeat: no-repeat;
+  }

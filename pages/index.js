@@ -46,12 +46,13 @@ const Index = () => {
   return (
     <div id="home-page">
       <div>
-        <CustomMenu />
       </div>
       <div id="hero-img-flex">
         <div id="hero-image">
           {/* Tried using src to grab the logo but it didn't work */}
-          <ImgFrame />
+          {/* <ImgFrame /> */}
+          <img className="logo1" src={require('../comps/Joe_Header/MajiLogo.svg')}></img>
+          
         </div>
       </div>
       <div id="btns">
