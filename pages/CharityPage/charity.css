@@ -64,22 +64,25 @@ body {
 
   .CharityBox{
       display: flex;
-      flex-direction: column;
+      flex-direction: column ;
       justify-content: center;
       align-items: center;
+      margin: 15px;
   }
 
   .buttonBox{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 13px;
   }
 
   .CharityButton{
     display: flex;
     justify-content: center;
     align-items: center;
-      width: 100px;
+      width: 300px;
       height: 100px;
       margin: 10px;
       border-radius: 15px;
@@ -88,7 +91,7 @@ body {
   }
 
   #lifeWater{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     height: 90%;
     width: 90%;
   background-image: url("/lifewater-logo.png" );
@@ -96,14 +99,15 @@ body {
   background-repeat: no-repeat;
   }
   #waterProject{
-    height: 70%;
-    width: 70%;
+    margin-left: 110px;
+    height: 80%;
+    width: 90%;
     background-image: url("/download.png" );
     background-size: contain;
     background-repeat: no-repeat;
     }
   #waterAid{
-      margin-top: 30px;
+    margin-left: 55px;
     height: 100%;
     width: 100%;
   background-image: url("/wateraid-social-logo.jpg" );
