@@ -29,7 +29,7 @@ const ResultPage = () => {
   }
 
   return (
-    <div className="Result-Page">
+    <div id="Result-Page">
       <div>
         <CustomMenu
           backClick={() => {
@@ -123,13 +123,14 @@ const ResultPage = () => {
       <CustomButton
         text="Charity"
         onclick={()=>{
-          document.querySelector(".Result-Page").style.opacity = 0;
-                document.querySelector(".Result-Page").style.left = "-100%";
+            document.querySelector("#Result-Page").style.opacity = 0;
+                document.querySelector("#Result-Page").style.left = "-100%";
                 setTimeout(function () {
                 nextPage();
                 data.page = "Charity"
             }, 1000);
-          
+            // nextPage();
+            // data.page = "Charity"
         }}
         />
         
