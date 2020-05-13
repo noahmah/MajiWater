@@ -43,7 +43,7 @@ const AboutPage = () => {
       </div>
       <div id="btns">
         <div id="btns-cont">
-          <div id="btns-box-abt">
+          <div id="btns-box_abt">
             <CustomButton
               color="#F7FAFD"
               text="Start Quiz"

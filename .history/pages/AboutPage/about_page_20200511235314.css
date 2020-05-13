@@ -22,8 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  bottom: 10%;
-  margin-bottom: 50px;
+  bottom: 5%;
+  margin-bottom: 10px;
 }
 
 #prog-box {
@@ -59,6 +59,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding-top: 15px;
 }

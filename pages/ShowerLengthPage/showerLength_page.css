@@ -5,7 +5,18 @@ body {
 #showerlength-page {
   position: relative;
   opacity: 0;
-  transition: 1s;
+  left: 0;
+  transition: opacity 1s, left 1s;
+}
+
+#transition {
+  margin-left: 0;
+  margin-right: 0;
+  width: 375px;
+}
+
+#transition-box {
+  position: relative;
 }
 
 #home-page {
