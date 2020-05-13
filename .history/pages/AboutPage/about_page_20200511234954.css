@@ -2,23 +2,6 @@ body {
   margin: 0;
 }
 
-#LaundryLoads-Page {
-  position: fixed;
-  opacity: 0;
-  left: 0;
-  transition: opacity 1s, left 1s;
-}
-
-#transition {
-  margin-left: 0;
-  margin-right: 0;
-  width: 375px;
-}
-
-#transition-box {
-  position: relative;
-}
-
 #home-page {
   display: flex;
   flex-direction: column;
@@ -39,11 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  bottom: 15%;
-}
-
-#btn-margin {
-  margin-bottom: 25px;
+  bottom: 5%;
 }
 
 #prog-box {
@@ -68,27 +47,17 @@ body {
   margin-top: 15%;
 }
 
-#quiz {
+#abt-text {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AbtAlign{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 140px;
-}
-
-#quiz-contents {
-  flex-direction: row;
-  width: 300px;
-  height: 300px;
-}
-
-#quiz-contents p {
-  text-align: center;
-}
-
-#slider-contents {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: fixed;
-  bottom: 12%;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-top: 15px;
 }

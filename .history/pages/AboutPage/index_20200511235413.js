@@ -15,10 +15,6 @@ const AboutPage = () => {
     Router.push("/CleansePage");
     data.page = "Cleanse";
   }
-  function previousPage(){
-    Router.push("/../");
-    data.page = "Home";
-  }
 
   return (
     <div>

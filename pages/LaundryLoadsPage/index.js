@@ -14,6 +14,7 @@ import { useEffect } from "react";
 const LaundryLoadsPage = () => {
   function nextPage() {
     document.querySelector("#LaundryLoads-Page").style.opacity = 0;
+    document.querySelector("#LaundryLoads-Page").style.left = "-100%";
     setTimeout(function () {
       data.page = "Dish Wash";
       Router.push("/DishPage");
@@ -36,28 +37,29 @@ const LaundryLoadsPage = () => {
 
   return (
     <div id="LaundryLoads-Page">
-      <div>
-        <CustomMenu
-          backClick={() => {
-            previousPage();
-          }}
-        />
-      </div>
-      <div id="quiz">
-        <div id="quiz-contents">
-          <BodyText text="How many loads of laundry did you do?" />
-          <ImgFrame
-            img={
-              "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-            }
-          />
+      <div id="transition">
+        <div id="transition-box">
+          <div>
+            <CustomMenu
+              backClick={() => {
+                previousPage();
+              }}
+            />
+          </div>
+          <div id="quiz">
+            <div id="quiz-contents">
+              <BodyText text="How many loads of laundry did you do?" />
+              <ImgFrame
+                img={
+                  "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                }
+              />
+            </div>
+          </div>
+          <div id="slider-contents">
+            <Slider data01="1" data02="2" data03="3" />
+          </div>
         </div>
-      </div>
-      <div id="slider-contents">
-        <Slider
-          data01="1"
-          data02="2"
-          data03="3" />
       </div>
       <div id="prog-box">
         <div id="prog-cont">

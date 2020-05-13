@@ -16,7 +16,6 @@ export default {
     component: CleansePage,
 };
 
-export const CustomizedBG = () => <CustomBG />
 export const CustomCleansePage = () => <CleansePage />;
 export const CustomDishPage = () => <DishPage />;
 export const CustomHomePage = () => <HomePage />;
