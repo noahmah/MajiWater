@@ -11,20 +11,10 @@ import CustomMenu from "../../comps/Noah_Menu";
 import NewWindow from 'react-new-window'
 
 const CharityPage = () => {
-  function goCharity(num) {
-    switch(num){
-        case 1:
-        window.open=('https://lifewater.org/blog/uganda-water-crisis/?fbclid=IwAR1Odqvf9zhvm5LMBvIzJfXgMdMnIMaXdBe5b0ZIbhpuy17xOmdrUIUzECQ');
-            break;
-        case 2:
-            location.href='https://lifewater.org/blog/uganda-water-crisis/?fbclid=IwAR1Odqvf9zhvm5LMBvIzJfXgMdMnIMaXdBe5b0ZIbhpuy17xOmdrUIUzECQ'
-            break;
-        case 3:
-            location.href='https://lifewater.org/blog/uganda-water-crisis/?fbclid=IwAR1Odqvf9zhvm5LMBvIzJfXgMdMnIMaXdBe5b0ZIbhpuy17xOmdrUIUzECQ'
-            break;
-            
-    }
-  }
+    function previousPage(){
+        Router.push("/../");
+        data.page = "Home";
+      }
 
   return (
     <div>
