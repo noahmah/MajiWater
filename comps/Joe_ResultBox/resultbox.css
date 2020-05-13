@@ -12,3 +12,7 @@
 .amountConsumedBox,.FactBox, .SuggestionBox{
   margin: 8px;
 }
+
+.suggestion-part{
+  margin: 5px;
+}
