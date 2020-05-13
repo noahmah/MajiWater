@@ -10,9 +10,6 @@ console.log(data);
 // var data02 = 2;
 // var data03 = 3;
 
-
-
-
 const Slider = ({ data01, data02, data03 }) => {
   function nextPage() {
     if (data.page === "Shower Length") {
@@ -38,7 +35,6 @@ const Slider = ({ data01, data02, data03 }) => {
   // }
   // replaceData()
 
-
   const [val, setVal] = useState("3");
 
   return (
@@ -55,9 +51,15 @@ const Slider = ({ data01, data02, data03 }) => {
           }}
         />
         <div className="lines">
-          <div id="line"><b>{data01}</b></div>
-          <div id="line"><b>{data02}</b></div>
-          <div id="line"><b>{data03}</b></div>
+          <div id="line">
+            <b>{data01}</b>
+          </div>
+          <div id="line">
+            <b>{data02}</b>
+          </div>
+          <div id="line">
+            <b>{data03}</b>
+          </div>
         </div>
       </div>
 
@@ -78,16 +80,20 @@ const Slider = ({ data01, data02, data03 }) => {
                 nextPage();
             }
           } else if (data.page === "Laundry Load") {
-            ChangeData(String(val), 4);
-            nextPage();
+            document.querySelector("#LaundryLoads-Page").style.opacity = 0;
+            document.querySelector("#LaundryLoads-Page").style.left = "-100%";
+            setTimeout(function () {
+              data.page = "Dish Wash";
+              // Router.push("/DishPage");
+              ChangeData(String(val), 4);
+              nextPage();
+              alert(console);
+            }, 1000);
           }
         }}
       />
     </div>
   );
 };
-
-
-
 
 export default Slider;
