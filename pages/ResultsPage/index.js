@@ -41,12 +41,13 @@ const ResultPage = () => {
         <CustomHeader text="Results" />
       </div>
       <div id="results-text">
-
+        <div className="ChoseHeader">
         <BodyText
         text="What you chose"
         fontSize="22px"
         fontWeight="Bold"
         />
+        </div>
 
         <div className="UserAnswer">
         <BodyText fontSize="16px"  text={data.results[0].question}></BodyText>
@@ -92,11 +93,13 @@ const ResultPage = () => {
 
         <div id="horizontal-line"></div>
 
+        <div className="ChoseHeader">
         <BodyText
         text="Results"
         fontSize="22px"
         fontWeight="Bold"
         />
+        </div>
 
           <ResultBox
             amountCon={data.waterUsage}
@@ -109,11 +112,14 @@ const ResultPage = () => {
       </div>
     
       <div className="buttonCon">
+      
+      <div className="Charity">
       <BodyText
         text="Want to help?"
         fontSize="22px"
         fontWeight="Bold"
         />
+       </div>
       <CustomButton
         text="Charity"
         onclick={()=>{
