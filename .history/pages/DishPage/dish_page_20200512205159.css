@@ -69,21 +69,11 @@ body {
 }
 
 #quiz {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 140px;
-  padding-top: 25px;
-  width: 100%;
-  top: 0;
 }
-
-#bg {
-  position: relative;
-  opacity: 50%;
-}
-
 
 #quiz-contents {
   flex-direction: row;
