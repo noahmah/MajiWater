@@ -32,7 +32,7 @@ body {
   list-style: none;
   width: 25px;
   height: 25px;
-  background: linear-gradient(to bottom, #ffffffd6 50%, #134a9ba1 120%);
+  background: linear-gradient(to bottom, #ffffffd6 50%, #134a9ba1 125%);
   animation: animate 20s linear infinite;
   bottom: -150px;
 }

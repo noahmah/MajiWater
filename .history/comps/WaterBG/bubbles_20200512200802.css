@@ -32,7 +32,7 @@ body {
   list-style: none;
   width: 25px;
   height: 25px;
-  background: linear-gradient(to bottom, #ffffffd6 50%, #134a9ba1 120%);
+  background: linear-gradient(to bottom, #ffffff98 50%, #0f3e8485 125%);
   animation: animate 20s linear infinite;
   bottom: -150px;
 }
@@ -58,7 +58,7 @@ body {
   left: 70%;
   width: 100px;
   height: 100px;
-  animation-delay: -3s;
+  animation-delay: -5s;
   animation-duration: 11.5s;
   border-radius: 100px;
 }
