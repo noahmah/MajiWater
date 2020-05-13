@@ -52,7 +52,7 @@ const AboutPage = () => {
           <BodyText text="https://www.un.org" />
           <BodyText text="https://www.imf.org" />
           <BodyText text="https://www.treehugger.com" />
-          <BodyText text="https://www.home-water-works.org" />
+          <BodyText ahref="https://www.home-water-works.org/indoor-use/showers" text="https://www.home-water-works.org" />
           <BodyText text="" />
           <BodyText text="" />
         </div>

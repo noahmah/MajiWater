@@ -49,12 +49,6 @@ const AboutPage = () => {
           <BodyText text="References" fontWeight="" fontSize="1.5em"></BodyText>
           <BodyText text="https://water-for-africa.org"></BodyText>
           <BodyText text="https://www.un.org" />
-          <BodyText text="https://www.un.org" />
-          <BodyText text="https://www.imf.org" />
-          <BodyText text="https://www.treehugger.com" />
-          <BodyText text="https://www.home-water-works.org" />
-          <BodyText text="" />
-          <BodyText text="" />
         </div>
 
       </div>
