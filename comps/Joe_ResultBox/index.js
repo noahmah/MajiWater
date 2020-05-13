@@ -36,17 +36,21 @@ const ResultBox = ({amountCon, facts, suggestion1,suggestion3,suggestion2}) => {
                     fontSize="18px"
                     fontWeight="Bold"
                 />
-
+            <div className="suggestion-part">
             {data.resultPath.suggestion1 != "" ? (
                 <BodyText text={suggestion1} />
             ) : null}
-            
+            </div>
+            <div className="suggestion-part">
             {data.resultPath.suggestion2 != "" ? (
                 <BodyText text={suggestion2} />
             ) : null}
+            </div>
+            <div className="suggestion-part">
             {data.resultPath.suggestion3 != "" ? (
                 <BodyText text={suggestion3} />
             ) : null}
+            </div>
 
         </div>
 
