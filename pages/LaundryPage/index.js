@@ -10,6 +10,7 @@ import ProgBar from "../../comps/Noah_ProgressBar";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
 import { useEffect } from "react";
+import CustomBG from "../../comps/WaterBG";
 
 console.log(data);
 
@@ -52,6 +53,9 @@ const LaundryPage = () => {
     <div id="Laundry-Page">
       <div id="transition">
         <div id="transition-box">
+          <div id="bg">
+            <CustomBG />
+          </div>
           <div>
             <CustomMenu
               backClick={() => {
