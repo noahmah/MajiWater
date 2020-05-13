@@ -1,26 +1,21 @@
-import React from 'react';
-import './bubbles.css';
+import React from "react";
+import "./bubbles.css";
 
-const CustomBG = ({ }) => <div>
+const CustomBG = ({}) => (
+  <div className="customBG">
     <div class="animation-area">
-        <ul class="box-area">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
+  </div>
+);
 
-</div>
-
-
-CustomBG.defaultProps = {
-
-
-}
-
-
+CustomBG.defaultProps = {};
 
 export default CustomBG;

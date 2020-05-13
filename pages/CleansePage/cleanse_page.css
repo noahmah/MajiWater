@@ -10,6 +10,10 @@ body {
   transition: opacity 1s, left 1s;
 }
 
+#bg {
+  position: relative;
+}
+
 #transition {
   margin-left: 0;
   margin-right: 0;
@@ -70,6 +74,8 @@ body {
 }
 
 #quiz {
+  position: absolute;
+  z-index: 900;
   display: flex;
   justify-content: center;
   align-items: center;
