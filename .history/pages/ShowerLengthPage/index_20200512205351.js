@@ -9,7 +9,6 @@ import ProgBar from "../../comps/Noah_ProgressBar";
 import Slider from "../../comps/Alex_Sliders";
 import { data, ChangeData } from "../../data";
 import CustomMenu from "../../comps/Noah_Menu";
-import CustomBG from "../../comps/WaterBG";
 import { useEffect } from "react";
 
 console.log(data);

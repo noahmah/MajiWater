@@ -79,10 +79,6 @@ body {
   top: 0;
 }
 
-#bg {
-  position: relative;
-  opacity: 50%;
-}
 
 #quiz-contents {
   flex-direction: row;
