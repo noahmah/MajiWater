@@ -13,11 +13,11 @@ console.log(data);
 const Slider = ({ data01, data02, data03 }) => {
   function nextPage() {
     if (data.page === "Shower Length") {
-      data.page = "Laundry";
       Router.push("/LaundryPage");
+      data.page = "Laundry";
     } else if (data.page === "Laundry Load") {
-      data.page = "Dish";
       Router.push("/DishPage");
+      data.page = "Dish";
     }
   }
 
@@ -70,24 +70,38 @@ const Slider = ({ data01, data02, data03 }) => {
           if (data.page === "Shower Length") {
             switch (val) {
               case "1":
+                document.querySelector("#showerlength-page").style.opacity = 0;
+                document.querySelector("#showerlength-page").style.left = "-100%";
+                setTimeout(function () {
                 ChangeData("10 Minutes", 1);
                 nextPage();
+            }, 1000);
+                break;
               case "2":
+                document.querySelector("#showerlength-page").style.opacity = 0;
+                document.querySelector("#showerlength-page").style.left = "-100%";
+                setTimeout(function () {
                 ChangeData("15 Minutes", 1);
                 nextPage();
+              }, 1000);
+                break;
+
               case "3":
-                ChangeData("20 Minutes", 1);
+                document.querySelector("#showerlength-page").style.opacity = 0;
+                document.querySelector("#showerlength-page").style.left = "-100%";
+                setTimeout(function () {
+                  ChangeData("20 Minutes", 1);
                 nextPage();
+              }, 1000);
+        
             }
           } else if (data.page === "Laundry Load") {
             document.querySelector("#LaundryLoads-Page").style.opacity = 0;
             document.querySelector("#LaundryLoads-Page").style.left = "-100%";
             setTimeout(function () {
-              data.page = "Dish Wash";
-              // Router.push("/DishPage");
               ChangeData(String(val), 4);
               nextPage();
-              alert(console);
+              
             }, 1000);
           }
         }}
