@@ -1,116 +1,122 @@
 body {
-    margin: 0;
-  }
-  
-  #home-page {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #btns {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #btns-cont {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #btns-box {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    bottom: 5%;
-  }
-  
-  #prog-box {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #prog-cont {
-    position: fixed;
-    bottom: 5%;
-  }
-  
-  #header {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  }
-  
-  #hero-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
-  }
-  
-  #abt-text {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .AbtAlign{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding-top: 15px;
-  }
+  margin: 0;
+}
 
-  .CharityBox{
-      display: flex;
-      flex-direction: column ;
-      justify-content: center;
-      align-items: center;
-      margin: 15px;
-  }
+#charity-page {
+  width: 100vw;
+  height: 100vh;
+}
 
-  .buttonBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 13px;
-  }
+#home-page {
+  display: flex;
+  flex-direction: column;
+}
 
-  .CharityButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      width: 300px;
-      height: 100px;
-      margin: 10px;
-      border-radius: 15px;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
+#btns {
+  display: flex;
+  justify-content: center;
+}
+
+#btns-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+#btns-box {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  bottom: 5%;
+}
+
+#prog-box {
+  display: flex;
+  justify-content: center;
+}
+
+#prog-cont {
+  position: fixed;
+  bottom: 5%;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+#abt-text {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AbtAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding-top: 15px;
+}
+
+.CharityBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 15px; */
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.CharityButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 75px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25),
     -2px -2px 4px rgba(116, 145, 177, 0.25);
-  }
+}
 
-  #lifeWater{
-    /* margin-top: 50px; */
-    height: 90%;
-    width: 90%;
-  background-image: url("/lifewater-logo.png" );
+#lifeWater {
+  background-image: url("/lifewater-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  }
-  #waterProject{
-    margin-left: 110px;
-    height: 80%;
-    width: 90%;
-    background-image: url("/download.png" );
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
-  #waterAid{
-    margin-left: 55px;
-    height: 100%;
-    width: 100%;
-  background-image: url("/wateraid-social-logo.jpg" );
+  background-position: center;
+  height: 80%;
+  width: 80%;
+}
+
+#waterProject {
+  background-image: url("/download.png");
   background-size: contain;
   background-repeat: no-repeat;
-  }
+  background-position: center;
+  height: 80%;
+  width: 80%;
+}
+#waterAid {
+  background-image: url("/wateraid-social-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+  width: 80%;
+}

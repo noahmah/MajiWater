@@ -80,15 +80,15 @@ const Slider = ({ data01, data02, data03 }) => {
                 nextPage();
             }
           } else if (data.page === "Laundry Load") {
-            document.querySelector("#LaundryLoads-Page").style.opacity = 0;
-            document.querySelector("#LaundryLoads-Page").style.left = "-100%";
-            setTimeout(function () {
-              data.page = "Dish Wash";
-              // Router.push("/DishPage");
-              ChangeData(String(val), 4);
-              nextPage();
-              alert(console);
-            }, 1000);
+            // document.querySelector("#LaundryLoads-Page").style.opacity = 0;
+            // document.querySelector("#LaundryLoads-Page").style.left = "-100%";
+            // setTimeout(function () {
+            //   data.page = "Dish Wash";
+            // Router.push("/DishPage");
+            ChangeData(String(val), 4);
+            nextPage();
+            //   alert(console);
+            // }, 1000);
           }
         }}
       />
