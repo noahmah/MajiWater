@@ -58,7 +58,10 @@ const CleansePage = () => {
           </div>
           <div id="quiz">
             <div id="quiz-contents">
-              <BodyText text="Did you shower or take a bath today" />
+              <BodyText
+                text="Did you shower or take a bath today"
+                color="#062D59"
+              />
               <ImgFrame />
             </div>
           </div>

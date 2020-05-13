@@ -12,6 +12,7 @@ body {
 
 #bg {
   position: relative;
+  opacity: 50%;
 }
 
 #transition {
@@ -75,11 +76,13 @@ body {
 
 #quiz {
   position: absolute;
-  z-index: 900;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 140px;
+  padding-top: 25px;
+  width: 100%;
+  top: 0;
 }
 
 #quiz-contents {
@@ -88,4 +91,5 @@ body {
 
 #quiz-contents p {
   text-align: center;
+  padding-bottom: 10px;
 }
