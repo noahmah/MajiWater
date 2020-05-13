@@ -40,21 +40,8 @@ const AboutPage = () => {
         <div id="abt-text">
           <BodyText text="About Maji" fontWeight="" fontSize="1.5em"></BodyText>
           <BodyText text="Here at Maji, we are heavily concerned about the Uganda water Crisis, and we think you should too. According to the UN, to stay healthy and clean a human should consume around 50L of water per day. Unfortunately, in Uganda, the median consumption of water is less than 17L per person according to Uganda’s Poverty Eradication Action Plan." />
-        </div>
-        <div id="abt-text">
           <BodyText text="Mission Statement" fontWeight="" fontSize="1.5em"></BodyText>
           <BodyText text="Our Mission Statement is to shine a light on the Ugandan water crisis and to raise awareness for nonprofit organizations.."></BodyText>
-        </div>
-        <div id="abt-text">
-          <BodyText text="References" fontWeight="" fontSize="1.5em"></BodyText>
-          <BodyText text="https://water-for-africa.org"></BodyText>
-          <BodyText text="https://www.un.org" />
-          <BodyText text="https://www.un.org" />
-          <BodyText text="https://www.imf.org" />
-          <BodyText text="https://www.treehugger.com" />
-          <BodyText text="https://www.home-water-works.org" />
-          <BodyText text="" />
-          <BodyText text="" />
         </div>
 
       </div>

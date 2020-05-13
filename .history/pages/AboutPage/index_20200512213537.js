@@ -50,11 +50,7 @@ const AboutPage = () => {
           <BodyText text="https://water-for-africa.org"></BodyText>
           <BodyText text="https://www.un.org" />
           <BodyText text="https://www.un.org" />
-          <BodyText text="https://www.imf.org" />
-          <BodyText text="https://www.treehugger.com" />
-          <BodyText text="https://www.home-water-works.org" />
-          <BodyText text="" />
-          <BodyText text="" />
+          <BodyText text="https://www.imf.org/external/NP/prsp/2000/Uga/01/" />
         </div>
 
       </div>

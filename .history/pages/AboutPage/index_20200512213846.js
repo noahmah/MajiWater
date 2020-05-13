@@ -54,6 +54,7 @@ const AboutPage = () => {
           <BodyText text="https://www.treehugger.com" />
           <BodyText text="https://www.home-water-works.org" />
           <BodyText text="" />
+          <a aherf="https://www.home-water-works.org/indoor-use/showers">https://www.home-water-works.org/indoor-use/showers</a>
           <BodyText text="" />
         </div>
 
