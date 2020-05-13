@@ -59,10 +59,4 @@ const ResultBox = ({amountCon, facts, suggestion1,suggestion3,suggestion2}) => {
 
 
 
-ResultBox.defaultProps = {
-    amountCon : "100gal",
-    facts : "hehexd",
-    suggestion : "just stop using water"
-}
-
 export default ResultBox;
