@@ -40,7 +40,8 @@ const CharityPage = () => {
         fontWeight="Bold"
         />
             <div className="buttonBox">
-                <div className="CharityButton" onClick={()=>{
+                <div className="CharityButton" 
+                onClick={()=>{
                     window.open("https://lifewater.org/blog/uganda-water-crisis/?fbclid=IwAR1Odqvf9zhvm5LMBvIzJfXgMdMnIMaXdBe5b0ZIbhpuy17xOmdrUIUzECQ")
                 }}>
                 <div id="lifeWater"></div></div>
@@ -54,6 +55,7 @@ const CharityPage = () => {
                     window.open("https://www.wateraid.org/us/where-we-work/uganda?fbclid=IwAR2Njq5GARLNHrmdZC-mBE2sXQ7_YVdYFtqBdCYWXuHH0jb0Birmvr1wiqQ")
                 }}>
                 <div id="waterAid"></div></div>
+                
                 
             </div>
         </div>

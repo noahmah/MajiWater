@@ -92,8 +92,9 @@ body {
 
   #lifeWater{
     /* margin-top: 50px; */
-    height: 90%;
-    width: 90%;
+    margin-left: 15px;
+    height: 70%;
+    width: 70%;
   background-image: url("/lifewater-logo.png" );
   background-size: contain;
   background-repeat: no-repeat;
